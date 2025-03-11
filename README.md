@@ -79,7 +79,7 @@ We present TrajectoryCrafter, a novel approach to redirect camera trajectories f
 
 
 #### <summary>Difix3D+: Improving 3D Reconstructions with Single-Step Diffusion Models
->*Results on Driving Scenes*
+>*enhance and remove artifacts in rendered novel views caused by underconstrained regions of the 3D representation. Results on Driving Scenes*
 
 Authors: Jay Zhangjie Wu, Yuxuan Zhang, Haithem Turki, Xuanchi Ren, Jun Gao, Mike Zheng Shou, Sanja Fidler, Zan Gojcic, Huan Ling
 <details span>
