@@ -124,7 +124,18 @@ While text-to-video diffusion models have made significant strides, many still f
 [📃 arXiv:2503](https://arxiv.org/pdf/2503.01774) | [⌨️ Code] | [🌐 Project Page](https://research.nvidia.com/labs/toronto-ai/difix3d/)
 
 
+#### <summary>Scene Splatter: Momentum 3D Scene Generation from Single Image with Video Diffusion Model
+>**
 
+Authors: 
+<details span>
+<summary><b>Abstract</b></summary>
+
+
+
+</details>
+
+[📃 arXiv:2503] | [⌨️ Code] | [🌐 Project Page]
 
 
 
