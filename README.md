@@ -124,20 +124,6 @@ While text-to-video diffusion models have made significant strides, many still f
 [📃 arXiv:2503](https://arxiv.org/pdf/2503.01774) | [⌨️ Code] | [🌐 Project Page](https://research.nvidia.com/labs/toronto-ai/difix3d/)
 
 
-#### <summary>Scene Splatter: Momentum 3D Scene Generation from Single Image with Video Diffusion Model
->**
-
-Authors: 
-<details span>
-<summary><b>Abstract</b></summary>
-
-
-
-</details>
-
-[📃 arXiv:2503] | [⌨️ Code] | [🌐 Project Page]
-
-
 
 #### <summary>GEN3C: 3D-Informed World-Consistent Video Generation with Precise Camera Control
 >*Simulating real-world driving scenes along a novel trajectory that is different from captured videos is a cornerstone for training autonomous vehicles. GEN3C can be applied*
@@ -152,6 +138,6 @@ We present GEN3C, a generative video model with precise Camera Control and tempo
 
 </details>
 
-[📃 arXiv:2503](https://arxiv.org/pdf/2503.03751) | [⌨️ Code] | [🌐 Project Page]
+[📃 arXiv:2503](https://arxiv.org/pdf/2503.03751) | [⌨️ Code](https://github.com/nv-tlabs/GEN3C) | [🌐 Project Page](https://research.nvidia.com/labs/toronto-ai/GEN3C/)
 
 
