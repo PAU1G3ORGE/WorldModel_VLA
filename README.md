@@ -2,7 +2,7 @@
 
 <br>
 
-[Diffusion](#Diffusion) | [VLA](#VLA) | [Others](#Others) 
+[WorldModel](#WorldModel) | [VLA](#VLA) | [Others](#Others) 
 
 <br>
 
@@ -20,6 +20,20 @@ World models can foresee the outcomes of different actions, which is of paramoun
 </details>
 
 [📃 arXiv:2311](https://arxiv.org/pdf/2405.17398) | [⌨️ Code](https://github.com/OpenDriveLab/Vista/tree/main?tab=readme-ov-file) | [🌐 Project Page](https://vista-demo.github.io/)
+
+#### <summary>From 2D to 3D Cognition: A Brief Survey of General World Models
+Authors: Ningwei Xie, Zizi Tian, Lei Yang, Xiao-Ping Zhang, Meng Guo, Jie Li
+<details span>
+<summary><b>Abstract</b></summary>
+World models have garnered increasing attention in the development of artificial general intelligence (AGI), serving as computational frameworks for learning representations of the external world and forecasting future states. While early efforts focused on 2D visual perception and simulation, recent 3D-aware generative world models have demonstrated the ability to synthesize geometrically consistent, interactive 3D environments, marking a shift toward 3D spatial cognition. Despite rapid progress, the field lacks systematic analysis to categorize emerging techniques and clarify their roles in advancing 3D cognitive world models. This survey addresses this need by introducing a conceptual framework, providing a structured and forward-looking review of world models transitioning from 2D perception to 3D cognition. Within this framework, we highlight two key technological drivers, particularly advances in 3D representations and the incorporation of world knowledge, as fundamental pillars. Building on these, we dissect three core cognitive capabilities that underpin 3D world modeling: 3D physical scene generation, 3D spatial reasoning, and 3D spatial interaction. We further examine the deployment of these capabilities in real-world applications, including embodied AI, autonomous driving, digital twin, and gaming/VR. Finally, we identify challenges across data, modeling, and deployment, and outline future directions for advancing more robust and generalizable 3D world models.
+  
+![image](https://github.com/user-attachments/assets/0c2f51f8-d083-4190-b379-11493c5e124f)
+
+</details>
+
+[📃 arXiv:2506](https://arxiv.org/pdf/2506.20134) | [⌨️ Code] | [🌐 Project Page]
+
+
 
 <br>
 <br>
