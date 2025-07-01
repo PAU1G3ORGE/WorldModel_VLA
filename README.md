@@ -2,7 +2,7 @@
 
 <br>
 
-[WorldModel](#WorldModel) | [VLA](#VLA) | [DrivingGaussian](#DrivingGaussian) [Others](#Others) 
+[WorldModel](#WorldModel) | [VLA](#VLA) | [DrivingGaussian](#DrivingGaussian) | [Others](#Others) 
 
 <br>
 
