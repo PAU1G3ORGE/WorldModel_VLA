@@ -97,6 +97,25 @@ The realistic reconstruction of street scenes is critical for developing real-wo
 [📃 arXiv:2506](https://arxiv.org/pdf/2506.22099) | [⌨️ Code](https://github.com/fudan-zvg/BezierGS) | [🌐 Project Page]
 
 
+#### <summary>RGE-GS: Reward-Guided Expansive Driving Scene Reconstruction via Diffusion Priors
+>*Reward Map for diffusion output*
+
+Authors: Sicong Du, Jiarun Liu, Qifeng Chen, Hao-Xiang Chen, Tai-Jiang Mu, Sheng Yang
+<details span>
+<summary><b>Abstract</b></summary>
+A single-pass driving clip frequently results in incomplete scanning of the road structure, making reconstructed scene expanding a critical requirement for sensor simulators to effectively regress driving actions. Although contemporary 3D Gaussian Splatting (3DGS) techniques achieve remarkable reconstruction quality, their direct extension through the integration of diffusion priors often introduces cumulative physical inconsistencies and compromises training efficiency. To address these limitations, we present RGE-GS, a novel expansive reconstruction framework that synergizes diffusion-based generation with reward-guided Gaussian integration. The RGE-GS framework incorporates two key innovations: First, we propose a reward network that learns to identify and prioritize consistently generated patterns prior to reconstruction phases, thereby enabling selective retention of diffusion outputs for spatial stability. Second, during the reconstruction process, we devise a differentiated training strategy that automatically adjust Gaussian optimization progress according to scene converge metrics, which achieving better convergence than baseline methods. Extensive evaluations of publicly available datasets demonstrate that RGE-GS achieves state-of-the-art performance in reconstruction quality.
+
+![image](https://github.com/user-attachments/assets/8a8764c2-0c9c-42d6-b6e9-dbdce4580327)
+
+</details>
+
+[📃 arXiv:2506](https://arxiv.org/pdf/2506.22800) | [⌨️ Code](https://github.com/CN-ADLab/RGE-GS) | [🌐 Project Page]
+
+
+
+
+<br>
+<br>
 
 
 
