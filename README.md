@@ -38,6 +38,22 @@ World models have garnered increasing attention in the development of artificial
 [📃 arXiv:2506](https://arxiv.org/pdf/2506.20134) | [⌨️ Code] | [🌐 Project Page]
 
 
+#### <summary>BEV-VAE: Multi-view Image Generation with Spatial Consistency for Autonomous Drivin
+>*avoids the ambiguity and lack of depth information introduced by 2D projections of 3D bounding boxes*
+
+Authors: Zeming Chen, Hang Zhao
+<details span>
+<summary><b>Abstract</b></summary>
+Multi-view image generation in autonomous driving demands consistent 3D scene understanding across camera views. Most existing methods treat this problem as a 2D image set generation task, lacking explicit 3D modeling. However, we argue that a structured representation is crucial for scene generation, especially for autonomous driving applications. This paper proposes BEV-VAE for consistent and controllable view synthesis. BEV-VAE first trains a multi-view image variational autoencoder for a compact and unified BEV latent space and then generates the scene with a latent diffusion transformer. BEV-VAE supports arbitrary view generation given camera configurations, and optionally 3D layouts. Experiments on nuScenes and Argoverse 2 (AV2) show strong performance in both 3D consistent reconstruction and generation.
+  
+![image](https://github.com/user-attachments/assets/46131f2a-cfec-4636-96db-53b049e7bb19)
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.00707) | [⌨️ Code](https://github.com/Czm369/bev-vae) | [🌐 Project Page]
+
+
+
 
 <br>
 <br>
@@ -47,7 +63,6 @@ World models have garnered increasing attention in the development of artificial
 
 
 #### <summary>EMMA: End-to-End Multimodal Model for Autonomous Driving
-
 
 Authors: Jyh-Jing Hwang, Runsheng Xu, Hubert Lin, Wei-Chih Hung, Jingwei Ji, Kristy Choi, Di Huang, Tong He, Paul Covington, Benjamin Sapp, Yin Zhou, James Guo, Dragomir Anguelov, Mingxing Tan
 <details span>
@@ -59,6 +74,21 @@ We introduce EMMA, an End-to-end Multimodal Model for Autonomous driving. Built 
 </details>
 
 [📃 arXiv:2410](https://arxiv.org/pdf/2410.23262) | [⌨️ Code] | [🌐 Project Page](https://waymo.com/blog/2024/10/introducing-emma/)
+
+
+#### <summary>World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model
+>*NOT VLA, integrates multi-modal driving intentions with a latent world model to enable rational planning*
+
+Authors: Yupeng Zheng, Pengxuan Yang, Zebin Xing, Qichao Zhang, Yuhang Zheng, Yinfeng Gao, Pengfei Li, Teng Zhang, Zhongpu Xia, Peng Jia, Dongbin Zhao
+<details span>
+<summary><b>Abstract</b></summary>
+End-to-end autonomous driving directly generates planning trajectories from raw sensor data, yet it typically relies on costly perception supervision to extract scene information. A critical research challenge arises: constructing an informative driving world model to enable perception annotation-free, end-to-end planning via self-supervised learning. In this paper, we present World4Drive, an end-to-end autonomous driving framework that employs vision foundation models to build latent world models for generating and evaluating multi-modal planning trajectories. Specifically, World4Drive first extracts scene features, including driving intention and world latent representations enriched with spatial-semantic priors provided by vision foundation models. It then generates multi-modal planning trajectories based on current scene features and driving intentions and predicts multiple intention-driven future states within the latent space. Finally, it introduces a world model selector module to evaluate and select the best trajectory. We achieve perception annotation-free, end-to-end planning through self-supervised alignment between actual future observations and predicted observations reconstructed from the latent space. World4Drive achieves state-of-the-art performance without manual perception annotations on both the open-loop nuScenes and closed-loop NavSim benchmarks, demonstrating an 18.1\% relative reduction in L2 error, 46.7% lower collision rate, and 3.75 faster training convergence.
+
+![image](https://github.com/user-attachments/assets/f93bd193-62e9-4a0f-ad3b-9b4e170191b6)
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.00603) | [⌨️ Code] | [🌐 Project Page]
 
 <br>
 <br>
