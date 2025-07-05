@@ -290,5 +290,17 @@ We present FLARE, a feed-forward model designed to infer high-quality camera pos
 [📃 arXiv:2502](https://arxiv.org/abs/2502.12138) | [⌨️ Code](https://github.com/ant-research/FLARE) | [🌐 Project Page](https://zhanghe3z.github.io/FLARE/)
 
 
+#### <summary>VoteSplat: Hough Voting Gaussian Splatting for 3D Scene Understanding
+> *3D points vote for 2d center*
 
+Authors: Minchao Jiang, Shunyu Jia, Jiaming Gu, Xiaoyuan Lu, Guangming Zhu, Anqi Dong, Liang Zhang
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3DGS) has become horsepower in high-quality, real-time rendering for novel view synthesis of 3D scenes. However, existing methods focus primarily on geometric and appearance modeling, lacking deeper scene understanding while also incurring high training costs that complicate the originally streamlined differentiable rendering pipeline. To this end, we propose VoteSplat, a novel 3D scene understanding framework that integrates Hough voting with 3DGS. Specifically, Segment Anything Model (SAM) is utilized for instance segmentation, extracting objects, and generating 2D vote maps. We then embed spatial offset vectors into Gaussian primitives. These offsets construct 3D spatial votes by associating them with 2D image votes, while depth distortion constraints refine localization along the depth axis. For open-vocabulary object localization, VoteSplat maps 2D image semantics to 3D point clouds via voting points, reducing training costs associated with high-dimensional CLIP features while preserving semantic unambiguity. Extensive experiments demonstrate effectiveness of VoteSplat in open-vocabulary 3D instance localization, 3D point cloud understanding, click-based 3D object localization, hierarchical segmentation, and ablation studies. 
+
+![image](https://github.com/user-attachments/assets/77480463-446c-432f-8a8f-6cb12d000a6a)
+
+</details>
+
+[📃 arXiv:2506](https://arxiv.org/pdf/2506.22799) | [⌨️ Code] | [🌐 Project Page](https://sy-ja.github.io/votesplat/)
 
