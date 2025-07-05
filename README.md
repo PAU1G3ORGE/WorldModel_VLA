@@ -291,7 +291,7 @@ We present FLARE, a feed-forward model designed to infer high-quality camera pos
 
 
 #### <summary>VoteSplat: Hough Voting Gaussian Splatting for 3D Scene Understanding
-> *3D points vote for 2d center*
+> *3D points vote for 2d center, 3D point vote for 2d plane in driving scenes?*
 
 Authors: Minchao Jiang, Shunyu Jia, Jiaming Gu, Xiaoyuan Lu, Guangming Zhu, Anqi Dong, Liang Zhang
 <details span>
