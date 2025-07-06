@@ -22,6 +22,35 @@ World models can foresee the outcomes of different actions, which is of paramoun
 [📃 arXiv:2311](https://arxiv.org/pdf/2405.17398) | [⌨️ Code](https://github.com/OpenDriveLab/Vista/tree/main?tab=readme-ov-file) | [🌐 Project Page](https://vista-demo.github.io/)
 
 
+#### <summary>Can Test-Time Scaling Improve World Foundation Model?
+>*cosmos-predict1*
+
+Authors: Wenyan Cong, Hanqing Zhu, Peihao Wang, Bangya Liu, Dejia Xu, Kevin Wang, David Z. Pan, Yan Wang, Zhiwen Fan, Zhangyang Wang
+<details span>
+<summary><b>Abstract</b></summary>
+World foundation models, which simulate the physical world by predicting future states from current observations and inputs, have become central to many applications in physical intelligence, including autonomous driving and robotics. However, these models require substantial computational resources for pretraining and are further constrained by available data during post-training. As such, scaling computation at test time emerges as both a critical and practical alternative to traditional model enlargement or re-training. In this work, we introduce SWIFT, a test-time scaling framework tailored for WFMs. SWIFT integrates our extensible WFM evaluation toolkit with process-level inference strategies, including fast tokenization, probability-based Top-K pruning, and efficient beam search. Empirical results on the COSMOS model demonstrate that test-time scaling exists even in a compute-optimal way. Our findings reveal that test-time scaling laws hold for WFMs and that SWIFT provides a scalable and effective pathway for improving WFM inference without retraining or increasing model size. 
+  
+![image](https://github.com/user-attachments/assets/803db78f-e3d8-45fc-887f-b9f1cef262d0)
+
+</details>
+
+[📃 arXiv:2503](https://arxiv.org/pdf/2503.24320) | [⌨️ Code](https://github.com/Mia-Cong/SWIFT.git) | [🌐 Project Page]
+
+
+#### <summary>End-to-End Driving with Online Trajectory Evaluation via BEV World Model
+>*3DGS methods need off-board reconstruction and cannot be adopted in our onboard driving setting and lack supervision for future states, while only one future state is available in
+ the real-world datasets*
+
+Authors: Yingyan Li, Yuqi Wang, Yang Liu, Jiawei He, Lue Fan, Zhaoxiang Zhang
+<details span>
+<summary><b>Abstract</b></summary>
+End-to-end autonomous driving has achieved remarkable progress by integrating perception, prediction, and planning into a fully differentiable framework. Yet, to fully realize its potential, an effective online trajectory evaluation is indispensable to ensure safety. By forecasting the future outcomes of a given trajectory, trajectory evaluation becomes much more effective. This goal can be achieved by employing a world model to capture environmental dynamics and predict future states. Therefore, we propose an end-to-end driving framework WoTE, which leverages a BEV World model to predict future BEV states for Trajectory Evaluation. The proposed BEV world model is latency-efficient compared to image-level world models and can be seamlessly supervised using off-the-shelf BEV-space traffic simulators. We validate our framework on both the NAVSIM benchmark and the closed-loop Bench2Drive benchmark based on the CARLA simulator, achieving state-of-the-art performance.
+  
+![image](https://github.com/user-attachments/assets/8d0df54a-188e-4d77-bf6f-e1aec44854fe)
+
+</details>
+
+[📃 arXiv:2504](https://arxiv.org/pdf/2504.01941) | [⌨️ Code](https://github.com/liyingyanUCAS/WoTE) | [🌐 Project Page]
 
 
 
@@ -38,6 +67,22 @@ World models have garnered increasing attention in the development of artificial
 [📃 arXiv:2506](https://arxiv.org/pdf/2506.20134) | [⌨️ Code] | [🌐 Project Page]
 
 
+#### <summary>LongDWM: Cross-Granularity Distillation for Building a Long-Term Driving World Model
+>*following work of Vista, decouple the long-term learning into large motion learning (e.g., scene transitions) and small continuous motion learning (e.g., car motions) for error accumulation*
+Authors: Xiaodong Wang, Zhirong Wu, Peixi Peng
+<details span>
+<summary><b>Abstract</b></summary>
+Driving world models are used to simulate futures by video generation based on the condition of the current state and actions. However, current models often suffer serious error accumulations when predicting the long-term future, which limits the practical application. Recent studies utilize the Diffusion Transformer (DiT) as the backbone of driving world models to improve learning flexibility. However, these models are always trained on short video clips (high fps and short duration), and multiple roll-out generations struggle to produce consistent and reasonable long videos due to the training-inference gap. To this end, we propose several solutions to build a simple yet effective long-term driving world model. First, we hierarchically decouple world model learning into large motion learning and bidirectional continuous motion learning. Then, considering the continuity of driving scenes, we propose a simple distillation method where fine-grained video flows are self-supervised signals for coarse-grained flows. The distillation is designed to improve the coherence of infinite video generation. The coarse-grained and fine-grained modules are coordinated to generate long-term and temporally coherent videos. In the public benchmark NuScenes, compared with the state-of-the-art front-view model, our model improves FVD by  and reduces inference time by  for the video task of generating 110+ frames.
+  
+![image](https://github.com/user-attachments/assets/a287dbce-07c2-4c85-8698-3d81bbe6bb4d)
+
+</details>
+
+[📃 arXiv:2506](https://arxiv.org/pdf/2506.01546) | [⌨️ Code] | [🌐 Project Page](https://wang-xiaodong1899.github.io/longdwm/)
+
+
+
+
 #### <summary>BEV-VAE: Multi-view Image Generation with Spatial Consistency for Autonomous Drivin
 >*avoids the ambiguity and lack of depth information introduced by 2D projections of 3D bounding boxes*
 
@@ -51,6 +96,8 @@ Multi-view image generation in autonomous driving demands consistent 3D scene un
 </details>
 
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.00707) | [⌨️ Code](https://github.com/Czm369/bev-vae) | [🌐 Project Page]
+
+
 
 
 
@@ -290,6 +337,22 @@ We present FLARE, a feed-forward model designed to infer high-quality camera pos
 [📃 arXiv:2502](https://arxiv.org/abs/2502.12138) | [⌨️ Code](https://github.com/ant-research/FLARE) | [🌐 Project Page](https://zhanghe3z.github.io/FLARE/)
 
 
+#### <summary>VMem: Consistent Interactive Video Scene Generation with Surfel-Indexed View Memory
+> *CUT3R for Retrieved, retrieved image for video generation*
+
+Authors: Runjia Li, Philip Torr, Andrea Vedaldi, Tomas Jakab
+<details span>
+<summary><b>Abstract</b></summary>
+We propose a novel memory mechanism to build video generators that can explore environments interactively. Similar results have previously been achieved by out-painting 2D views of the scene while incrementally reconstructing its 3D geometry, which quickly accumulates errors, or by video generators with a short context window, which struggle to maintain scene coherence over the long term. To address these limitations, we introduce Surfel-Indexed View Memory (VMem), a mechanism that remembers past views by indexing them geometrically based on the 3D surface elements (surfels) they have observed. VMem enables the efficient retrieval of the most relevant past views when generating new ones. By focusing only on these relevant views, our method produces consistent explorations of imagined environments at a fraction of the computational cost of using all past views as context. We evaluate our approach on challenging long-term scene synthesis benchmarks and demonstrate superior performance compared to existing methods in maintaining scene coherence and camera control.
+
+![image](https://github.com/user-attachments/assets/ee8fda60-532e-48f6-99ec-caf56394ff11)
+
+</details>
+
+[📃 arXiv:2506](https://arxiv.org/pdf/2506.18903) | [⌨️ Code](https://github.com/runjiali-rl/vmem) | [🌐 Project Page](https://v-mem.github.io/)
+
+
+
 #### <summary>VoteSplat: Hough Voting Gaussian Splatting for 3D Scene Understanding
 > *3D points vote for 2d center, 3D point vote for 2d plane in driving scenes?*
 
@@ -303,4 +366,19 @@ Authors: Minchao Jiang, Shunyu Jia, Jiaming Gu, Xiaoyuan Lu, Guangming Zhu, Anqi
 </details>
 
 [📃 arXiv:2506](https://arxiv.org/pdf/2506.22799) | [⌨️ Code] | [🌐 Project Page](https://sy-ja.github.io/votesplat/)
+
+
+#### <summary>FreeMorph: Tuning-Free Generalized Image Morphing with Diffusion Model
+> *features from the right image can largely enhance the smoothness and identity preservation of the image transitions, substitute the original K and V with those derived from the right images*
+
+Authors: Yukang Cao, Chenyang Si, Jinghao Wang, Ziwei Liu
+<details span>
+<summary><b>Abstract</b></summary>
+We present FreeMorph, the first tuning-free method for image morphing that accommodates inputs with different semantics or layouts. Unlike existing methods that rely on finetuning pre-trained diffusion models and are limited by time constraints and semantic/layout discrepancies, FreeMorph delivers high-fidelity image morphing without requiring per-instance training. Despite their efficiency and potential, tuning-free methods face challenges in maintaining high-quality results due to the non-linear nature of the multi-step denoising process and biases inherited from the pre-trained diffusion model. In this paper, we introduce FreeMorph to address these challenges by integrating two key innovations. 1) We first propose a guidance-aware spherical interpolation design that incorporates explicit guidance from the input images by modifying the self-attention modules, thereby addressing identity loss and ensuring directional transitions throughout the generated sequence. 2) We further introduce a step-oriented variation trend that blends self-attention modules derived from each input image to achieve controlled and consistent transitions that respect both inputs. Our extensive evaluations demonstrate that FreeMorph outperforms existing methods, being 10x ~ 50x faster and establishing a new state-of-the-art for image morphing.
+
+![image](https://github.com/user-attachments/assets/61b4e2bc-d1b2-480b-ba96-05b08bb6e96d)
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.01953) | [⌨️ Code](https://github.com/yukangcao/FreeMorph) | [🌐 Project Page](https://yukangcao.github.io/FreeMorph/)
 
