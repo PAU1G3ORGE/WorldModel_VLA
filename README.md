@@ -54,6 +54,7 @@ End-to-end autonomous driving has achieved remarkable progress by integrating pe
 
 
 
+
 #### <summary>From 2D to 3D Cognition: A Brief Survey of General World Models
 Authors: Ningwei Xie, Zizi Tian, Lei Yang, Xiao-Ping Zhang, Meng Guo, Jie Li
 <details span>
@@ -83,7 +84,7 @@ Driving world models are used to simulate futures by video generation based on t
 
 
 
-#### <summary>BEV-VAE: Multi-view Image Generation with Spatial Consistency for Autonomous Drivin
+#### <summary>BEV-VAE: Multi-view Image Generation with Spatial Consistency for Autonomous Driving
 >*avoids the ambiguity and lack of depth information introduced by 2D projections of 3D bounding boxes*
 
 Authors: Zeming Chen, Hang Zhao
@@ -123,8 +124,22 @@ We introduce EMMA, an End-to-end Multimodal Model for Autonomous driving. Built 
 [📃 arXiv:2410](https://arxiv.org/pdf/2410.23262) | [⌨️ Code] | [🌐 Project Page](https://waymo.com/blog/2024/10/introducing-emma/)
 
 
+#### <summary>Enhancing End-to-End Autonomous Driving with Latent World Model
+>*NOT VLA, NOT WORLD MODEL, self-supervised method jointly optimizes the current scene feature learning and ego trajectory prediction*
+
+Authors: Yingyan Li, Lue Fan, Jiawei He, Yuqi Wang, Yuntao Chen, Zhaoxiang Zhang, Tieniu Tan
+<details span>
+<summary><b>Abstract</b></summary>
+In autonomous driving, end-to-end planners directly utilize raw sensor data, enabling them to extract richer scene features and reduce information loss compared to traditional planners. This raises a crucial research question: how can we develop better scene feature representations to fully leverage sensor data in end-to-end driving? Self-supervised learning methods show great success in learning rich feature representations in NLP and computer vision. Inspired by this, we propose a novel self-supervised learning approach using the LAtent World model (LAW) for end-to-end driving. LAW predicts future scene features based on current features and ego trajectories. This self-supervised task can be seamlessly integrated into perception-free and perception-based frameworks, improving scene feature learning and optimizing trajectory prediction. LAW achieves state-of-the-art performance across multiple benchmarks, including real-world open-loop benchmark nuScenes, NAVSIM, and simulator-based closed-loop benchmark CARLA.
+  
+![image](https://github.com/user-attachments/assets/425631f1-a8e5-4860-b144-57d4e63cc593)
+
+</details>
+
+[📃 arXiv:2506](https://arxiv.org/pdf/2406.08481) | [⌨️ Code](https://github.com/BraveGroup/LAW) | [🌐 Project Page]
+
 #### <summary>World4Drive: End-to-End Autonomous Driving via Intention-aware Physical Latent World Model
->*NOT VLA, integrates multi-modal driving intentions with a latent world model to enable rational planning*
+>*NOT VLA, NOT WORLD MODEL, integrates multi-modal driving intentions with a latent world model (attention layer) to enable rational planning*
 
 Authors: Yupeng Zheng, Pengxuan Yang, Zebin Xing, Qichao Zhang, Yuhang Zheng, Yinfeng Gao, Pengfei Li, Teng Zhang, Zhongpu Xia, Peng Jia, Dongbin Zhao
 <details span>
