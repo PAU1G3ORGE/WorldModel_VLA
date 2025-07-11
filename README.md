@@ -237,7 +237,19 @@ A single-pass driving clip frequently results in incomplete scanning of the road
 
 [📃 arXiv:2506](https://arxiv.org/pdf/2506.22800) | [⌨️ Code](https://github.com/CN-ADLab/RGE-GS) | [🌐 Project Page]
 
+#### <summary>Feed-Forward SceneDINO for Unsupervised Semantic Scene Completion
+>*3D Feature Field for semantic scene completion*
 
+Authors: Aleksandar Jevtić, Christoph Reich, Felix Wimbauer, Oliver Hahn, Christian Rupprecht, Stefan Roth, Daniel Cremers
+<details span>
+<summary><b>Abstract</b></summary>
+Semantic scene completion (SSC) aims to infer both the 3D geometry and semantics of a scene from single images. In contrast to prior work on SSC that heavily relies on expensive ground-truth annotations, we approach SSC in an unsupervised setting. Our novel method, SceneDINO, adapts techniques from self-supervised representation learning and 2D unsupervised scene understanding to SSC. Our training exclusively utilizes multi-view consistency self-supervision without any form of semantic or geometric ground truth. Given a single input image, SceneDINO infers the 3D geometry and expressive 3D DINO features in a feed-forward manner. Through a novel 3D feature distillation approach, we obtain unsupervised 3D semantics. In both 3D and 2D unsupervised scene understanding, SceneDINO reaches state-of-the-art segmentation accuracy. Linear probing our 3D features matches the segmentation accuracy of a current supervised SSC approach. Additionally, we showcase the domain generalization and multi-view consistency of SceneDINO, taking the first steps towards a strong foundation for single image 3D scene understanding.
+
+<img width="1812" height="286" alt="image" src="https://github.com/user-attachments/assets/22bd8019-c4dc-4c7d-8153-5e0d18adf9b6" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.06230) | [⌨️ Code](https://github.com/tum-vision/scenedino) | [🌐 Project Page](https://visinf.github.io/scenedino/)
 
 
 <br>
