@@ -427,3 +427,37 @@ We present FreeMorph, the first tuning-free method for image morphing that accom
 
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.01953) | [⌨️ Code](https://github.com/yukangcao/FreeMorph) | [🌐 Project Page](https://yukangcao.github.io/FreeMorph/)
 
+
+
+
+
+#### <summary>Frequency Regulation for Exposure Bias Mitigation in Diffusion Models
+> *The distribution is changed during frequency regulation. Is this correct?*
+
+Authors: Meng Yu, Kun Zhan
+<details span>
+<summary><b>Abstract</b></summary>
+Diffusion models exhibit impressive generative capabilities but are significantly impacted by exposure bias. In this paper, we make a key observation: the energy of the predicted noisy images decreases during the diffusion process. Building on this, we identify two important findings: 1) The reduction in energy follows distinct patterns in the low-frequency and high-frequency subbands; 2) This energy reduction results in amplitude variations between the network-reconstructed clean data and the real clean data. Based on the first finding, we introduce a frequency-domain regulation mechanism utilizing wavelet transforms, which separately adjusts the low- and high-frequency subbands. Leveraging the second insight, we provide a more accurate analysis of exposure bias in the two subbands. Our method is training-free and plug-and-play, significantly improving the generative quality of various diffusion models and providing a robust solution to exposure bias across different model architectures. 
+
+<img width="978" height="505" alt="image" src="https://github.com/user-attachments/assets/cd3d14f3-34df-40dc-9080-1322491d7292" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.10072) | [⌨️ Code] | [🌐 Project Page]
+
+
+
+#### <summary>Improving Remote Sensing Classification using Topological Data Analysis and Convolutional Neural Networks
+> *Topological data analysis (TDA)*
+
+Authors: Aaryam Sharma
+<details span>
+<summary><b>Abstract</b></summary>
+Topological data analysis (TDA) is a relatively new field that is gaining rapid adoption due to its robustness and ability to effectively describe complex datasets by quantifying geometric information. In imaging contexts, TDA typically models data as filtered cubical complexes from which we can extract discriminative features using persistence homology. Meanwhile, convolutional neural networks (CNNs) have been shown to be biased towards texture based local features. To address this limitation, we propose a TDA feature engineering pipeline and a simple method to integrate topological features with deep learning models on remote sensing classification. Our method improves the performance of a ResNet18 model on the EuroSAT dataset by 1.44% achieving 99.33% accuracy, which surpasses all previously reported single-model accuracies, including those with larger architectures, such as ResNet50 (2x larger) and XL Vision Transformers (197x larger). We additionally show that our method's accuracy is 1.82% higher than our ResNet18 baseline on the RESISC45 dataset. To our knowledge, this is the first application of TDA features in satellite scene classification with deep learning. This demonstrates that TDA features can be integrated with deep learning models, even on datasets without explicit topological structures, thereby increasing the applicability of TDA. A clean implementation of our method will be made publicly available upon publication.
+
+<img width="1955" height="807" alt="image" src="https://github.com/user-attachments/assets/44776131-9605-408a-b8f3-e42d1f3130f7" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.10381) | [⌨️ Code] | [🌐 Project Page]
+
