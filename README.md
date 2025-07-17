@@ -267,6 +267,38 @@ Semantic scene completion (SSC) aims to infer both the 3D geometry and semantics
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.06230) | [⌨️ Code](https://github.com/tum-vision/scenedino) | [🌐 Project Page](https://visinf.github.io/scenedino/)
 
 
+#### <summary>AD-GS: Object-Aware B-Spline Gaussian Splatting for Self-Supervised Autonomous Driving
+>*a novel learnable motion model that integrates locality-aware B-spline curves with global-aware trigonometric functions. modeling object Gaussians' motions by deforming their
+ positions µ and rotations R over time using B-splines and trigonometric functions. a regularization loss to ensure that nearby object Gaussians G∈Ω obj exhibit similar deformations in position and temporal visibility mask*
+
+Authors: Jiawei Xu, Kai Deng, Zexin Fan, Shenlong Wang, Jin Xie, Jian Yang
+<details span>
+<summary><b>Abstract</b></summary>
+Modeling and rendering dynamic urban driving scenes is crucial for self-driving simulation. Current high-quality methods typically rely on costly manual object tracklet annotations, while self-supervised approaches fail to capture dynamic object motions accurately and decompose scenes properly, resulting in rendering artifacts. We introduce AD-GS, a novel self-supervised framework for high-quality free-viewpoint rendering of driving scenes from a single log. At its core is a novel learnable motion model that integrates locality-aware B-spline curves with global-aware trigonometric functions, enabling flexible yet precise dynamic object modeling. Rather than requiring comprehensive semantic labeling, AD-GS automatically segments scenes into objects and background with the simplified pseudo 2D segmentation, representing objects using dynamic Gaussians and bidirectional temporal visibility masks. Further, our model incorporates visibility reasoning and physically rigid regularization to enhance robustness. Extensive evaluations demonstrate that our annotation-free model significantly outperforms current state-of-the-art annotation-free methods and is competitive with annotation-dependent approaches.
+
+<img width="1812" height="286" alt="image" src="https://github.com/user-attachments/assets/22bd8019-c4dc-4c7d-8153-5e0d18adf9b6" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.12137) | [⌨️ Code](https://github.com/JiaweiXu8/AD-GS) | [🌐 Project Page](https://jiaweixu8.github.io/AD-GS-web/)
+
+
+#### <summary>LidarPainter: One-Step Away From Any Lidar View To Novel Guidance
+>*One-Step Diffusion, but struct still is mess*
+
+Authors: Yuzhou Ji, Ke Ma, Hong Cai, Anchun Zhang, Lizhuang Ma, Xin Tan
+<details span>
+<summary><b>Abstract</b></summary>
+Dynamic driving scene reconstruction is of great importance in fields like digital twin system and autonomous driving simulation. However, unacceptable degradation occurs when the view deviates from the input trajectory, leading to corrupted background and vehicle models. To improve reconstruction quality on novel trajectory, existing methods are subject to various limitations including inconsistency, deformation, and time consumption. This paper proposes LidarPainter, a one-step diffusion model that recovers consistent driving views from sparse LiDAR condition and artifact-corrupted renderings in real-time, enabling high-fidelity lane shifts in driving scene reconstruction. Extensive experiments show that LidarPainter outperforms state-of-the-art methods in speed, quality and resource efficiency, specifically 7 x faster than StreetCrafter with only one fifth of GPU memory required. LidarPainter also supports stylized generation using text prompts such as "foggy" and "night", allowing for a diverse expansion of the existing asset library.
+
+<img width="2030" height="786" alt="image" src="https://github.com/user-attachments/assets/c8149b4f-e66d-4158-acd1-7d8d8f003f30" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.12114) | [⌨️ Code] | [🌐 Project Page]
+
+
+
 <br>
 <br>
 
@@ -475,3 +507,17 @@ Authors: Chong Cheng, Yu Hu, Sicheng Yu, Beizhen Zhao, Zijian Wang, Hao Wang
 
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.08136) | [⌨️ Code] | [🌐 Project Page]
 
+
+#### <summary>Foresight in Motion: Reinforcing Trajectory Prediction with Reward Heuristics
+>*Can trajectory prediction be approached from a planning perspective and enhanced with intention reasoning capabilities?*
+
+Authors: Muleilan Pei, Shaoshuai Shi, Xuesong Chen, Xu Liu, Shaojie Shen
+<details span>
+<summary><b>Abstract</b></summary>
+Motion forecasting for on-road traffic agents presents both a significant challenge and a critical necessity for ensuring safety in autonomous driving systems. In contrast to most existing data-driven approaches that directly predict future trajectories, we rethink this task from a planning perspective, advocating a "First Reasoning, Then Forecasting" strategy that explicitly incorporates behavior intentions as spatial guidance for trajectory prediction. To achieve this, we introduce an interpretable, reward-driven intention reasoner grounded in a novel query-centric Inverse Reinforcement Learning (IRL) scheme. Our method first encodes traffic agents and scene elements into a unified vectorized representation, then aggregates contextual features through a query-centric paradigm. This enables the derivation of a reward distribution, a compact yet informative representation of the target agent's behavior within the given scene context via IRL. Guided by this reward heuristic, we perform policy rollouts to reason about multiple plausible intentions, providing valuable priors for subsequent trajectory generation. Finally, we develop a hierarchical DETR-like decoder integrated with bidirectional selective state space models to produce accurate future trajectories along with their associated probabilities. Extensive experiments on the large-scale Argoverse and nuScenes motion forecasting datasets demonstrate that our approach significantly enhances trajectory prediction confidence, achieving highly competitive performance relative to state-of-the-art methods.
+
+<img width="1614" height="899" alt="image" src="https://github.com/user-attachments/assets/86fb69db-aac4-4754-8157-efc2c5f1e054" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.12083) | [⌨️ Code] | [🌐 Project Page]
