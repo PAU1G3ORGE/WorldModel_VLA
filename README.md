@@ -99,7 +99,35 @@ Multi-view image generation in autonomous driving demands consistent 3D scene un
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.00707) | [⌨️ Code](https://github.com/Czm369/bev-vae) | [🌐 Project Page]
 
 
+#### <summary>Orbis: Overcoming Challenges of Long-Horizon Prediction in Driving World Models
+>*continuous and discrete prediction losses on a fair common ground and find a clear advantage in favor of continuous modeling. new metric: map both real and generated videos to pose sequences using the inverse dynamics model VGGT, measure distances between real and generated trajectories.*
 
+Authors: Arian Mousakhan, Sudhanshu Mittal, Silvio Galesso, Karim Farid, Thomas Brox
+<details span>
+<summary><b>Abstract</b></summary>
+Existing world models for autonomous driving struggle with long-horizon generation and generalization to challenging scenarios. In this work, we develop a model using simple design choices, and without additional supervision or sensors, such as maps, depth, or multiple cameras. We show that our model yields state-of-the-art performance, despite having only 469M parameters and being trained on 280h of video data. It particularly stands out in difficult scenarios like turning maneuvers and urban traffic. We test whether discrete token models possibly have advantages over continuous models based on flow matching. To this end, we set up a hybrid tokenizer that is compatible with both approaches and allows for a side-by-side comparison. Our study concludes in favor of the continuous autoregressive model, which is less brittle on individual design choices and more powerful than the model built on discrete tokens.
+  
+<img width="1459" height="732" alt="image" src="https://github.com/user-attachments/assets/d1aee24d-9d40-4ba9-a025-516991811413" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.13162v1) | [⌨️ Code] | [🌐 Project Page](https://lmb-freiburg.github.io/orbis.github.io/)
+
+
+
+#### <summary>World Model-Based End-to-End Scene Generation for Accident Anticipation in Autonomous Driving
+>*propose a driving scene generation framework for data augmentation in accident anticipation and release the Anticipation of Traffic Accident (AoTA) dataset*
+
+Authors: Yanchen Guan, Haicheng Liao, Chengyue Wang, Xingcheng Liu, Jiaxun Zhang, Zhenning Li
+<details span>
+<summary><b>Abstract</b></summary>
+Reliable anticipation of traffic accidents is essential for advancing autonomous driving systems. However, this objective is limited by two fundamental challenges: the scarcity of diverse, high-quality training data and the frequent absence of crucial object-level cues due to environmental disruptions or sensor deficiencies. To tackle these issues, we propose a comprehensive framework combining generative scene augmentation with adaptive temporal reasoning. Specifically, we develop a video generation pipeline that utilizes a world model guided by domain-informed prompts to create high-resolution, statistically consistent driving scenarios, particularly enriching the coverage of edge cases and complex interactions. In parallel, we construct a dynamic prediction model that encodes spatio-temporal relationships through strengthened graph convolutions and dilated temporal operators, effectively addressing data incompleteness and transient visual noise. Furthermore, we release a new benchmark dataset designed to better capture diverse real-world driving risks. Extensive experiments on public and newly released datasets confirm that our framework enhances both the accuracy and lead time of accident anticipation, offering a robust solution to current data and modeling limitations in safety-critical autonomous driving applications.
+  
+<img width="976" height="474" alt="image" src="https://github.com/user-attachments/assets/e2e5eab7-dc32-476c-9e38-b586a3dfee3b" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.12762) | [⌨️ Code] | [🌐 Project Page]
 
 
 
