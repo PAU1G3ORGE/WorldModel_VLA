@@ -549,3 +549,18 @@ Motion forecasting for on-road traffic agents presents both a significant challe
 </details>
 
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.12083) | [⌨️ Code] | [🌐 Project Page]
+
+
+#### <summary>ObjectGS: Object-aware Scene Reconstruction and Scene Understanding via Gaussian Splatting
+>*three kinds of voting strategies to quickly initialize the point cloud for different objects: (1) Majority Voting. (2) Probability-based Voting. (3)Correspondence-based Voting.*
+
+Authors: Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang, Jiangmiao Pang, Bo Dai
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting is renowned for its high-fidelity reconstructions and real-time novel view synthesis, yet its lack of semantic understanding limits object-level perception. In this work, we propose ObjectGS, an object-aware framework that unifies 3D scene reconstruction with semantic understanding. Instead of treating the scene as a unified whole, ObjectGS models individual objects as local anchors that generate neural Gaussians and share object IDs, enabling precise object-level reconstruction. During training, we dynamically grow or prune these anchors and optimize their features, while a one-hot ID encoding with a classification loss enforces clear semantic constraints. We show through extensive experiments that ObjectGS not only outperforms state-of-the-art methods on open-vocabulary and panoptic segmentation tasks, but also integrates seamlessly with applications like mesh extraction and scene editing.
+
+<img width="1785" height="711" alt="image" src="https://github.com/user-attachments/assets/2f536957-c827-4682-a6be-c36c6c787a61" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.15454) | [⌨️ Code](https://github.com/RuijieZhu94/ObjectGS) | [🌐 Project Page](https://ruijiezhu94.github.io/ObjectGS_page/)
