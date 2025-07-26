@@ -564,3 +564,17 @@ Authors: Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang
 </details>
 
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.15454) | [⌨️ Code](https://github.com/RuijieZhu94/ObjectGS) | [🌐 Project Page](https://ruijiezhu94.github.io/ObjectGS_page/)
+
+
+#### <summary>CRUISE: Cooperative Reconstruction and Editing in V2X Scenarios using Gaussian Splatting
+
+Authors: Haoran Xu, Saining Zhang, Peishuo Li, Baijun Ye, Xiaoxue Chen, Huan-ang Gao, Jv Zheng, Xiaowei Song, Ziqiao Peng, Run Miao, Jinrang Jia, Yifeng Shi, Guangqi Yi, Hang Zhao, Hao Tang, Hongyang Li, Kaicheng Yu, Hao Zhao
+<details span>
+<summary><b>Abstract</b></summary>
+Vehicle-to-everything (V2X) communication plays a crucial role in autonomous driving, enabling cooperation between vehicles and infrastructure. While simulation has significantly contributed to various autonomous driving tasks, its potential for data generation and augmentation in V2X scenarios remains underexplored. In this paper, we introduce CRUISE, a comprehensive reconstruction-and-synthesis framework designed for V2X driving environments. CRUISE employs decomposed Gaussian Splatting to accurately reconstruct real-world scenes while supporting flexible editing. By decomposing dynamic traffic participants into editable Gaussian representations, CRUISE allows for seamless modification and augmentation of driving scenes. Furthermore, the framework renders images from both ego-vehicle and infrastructure views, enabling large-scale V2X dataset augmentation for training and evaluation. Our experimental results demonstrate that: 1) CRUISE reconstructs real-world V2X driving scenes with high fidelity; 2) using CRUISE improves 3D detection across ego-vehicle, infrastructure, and cooperative views, as well as cooperative 3D tracking on the V2X-Seq benchmark; and 3) CRUISE effectively generates challenging corner cases.
+
+<img width="1878" height="468" alt="image" src="https://github.com/user-attachments/assets/ed85c9af-fd5c-4740-9f58-08fe227109f1" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.18473) | [⌨️ Code](https://github.com/SainingZhang/CRUISE) | [🌐 Project Page]
