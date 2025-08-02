@@ -592,4 +592,4 @@ Authors: Zhentao Huang, Di Wu, Zhenbang He, Minglun Gong
 
 </details>
 
-[📃 arXiv:2412](https://arxiv.org/pdf/2507.18923) | [⌨️ Code] | [🌐 Project Page]
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.18923) | [⌨️ Code] | [🌐 Project Page]
