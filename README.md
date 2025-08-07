@@ -593,3 +593,19 @@ Authors: Zhentao Huang, Di Wu, Zhenbang He, Minglun Gong
 </details>
 
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.18923) | [⌨️ Code] | [🌐 Project Page]
+
+
+
+#### <summary>CoopTrack: Exploring End-to-End Learning for Efficient Cooperative Sequential Perception
+>*two MLPs are utilized to predict the parameters of the latent rotation and the latent translation, respectively*
+
+Authors: Jiaru Zhong, Jiahao Wang, Jiahui Xu, Xiaofan Li, Zaiqing Nie, Haibao Yu
+<details span>
+<summary><b>Abstract</b></summary>
+Cooperative perception aims to address the inherent limitations of single-vehicle autonomous driving systems through information exchange among multiple agents. Previous research has primarily focused on single-frame perception tasks. However, the more challenging cooperative sequential perception tasks, such as cooperative 3D multi-object tracking, have not been thoroughly investigated. Therefore, we propose CoopTrack, a fully instance-level end-to-end framework for cooperative tracking, featuring learnable instance association, which fundamentally differs from existing approaches. CoopTrack transmits sparse instance-level features that significantly enhance perception capabilities while maintaining low transmission costs. Furthermore, the framework comprises two key components: Multi-Dimensional Feature Extraction, and Cross-Agent Association and Aggregation, which collectively enable comprehensive instance representation with semantic and motion features, and adaptive cross-agent association and fusion based on a feature graph. Experiments on both the V2X-Seq and Griffin datasets demonstrate that CoopTrack achieves excellent performance. Specifically, it attains state-of-the-art results on V2X-Seq, with 39.0\% mAP and 32.8\% AMOTA.
+
+<img width="922" height="783" alt="image" src="https://github.com/user-attachments/assets/c4145046-33c6-4c12-8352-61e073dd1031" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.19239) | [⌨️ Code](https://github.com/zhongjiaru/CoopTrack) | [🌐 Project Page]
