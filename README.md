@@ -326,6 +326,82 @@ Dynamic driving scene reconstruction is of great importance in fields like digit
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.12114) | [⌨️ Code] | [🌐 Project Page]
 
 
+#### <summary>RoGs: Large Scale Road Surface Reconstruction with Meshgrid Gaussian
+>*vehicle poses are commonly parallel to the road*
+
+Authors: Zhiheng Feng, Wenhua Wu, Tianchen Deng, Hesheng Wang
+<details span>
+<summary><b>Abstract</b></summary>
+Road surface reconstruction plays a crucial role in autonomous driving, which can be used for road lane perception and autolabeling. Recently, mesh-based road surface reconstruction algorithms have shown promising reconstruction results. However, these mesh-based methods suffer from slow speed and poor reconstruction quality. To address these limitations, we propose a novel large-scale road surface reconstruction approach with meshgrid Gaussian, named RoGs. Specifically, we model the road surface by placing Gaussian surfels in the vertices of a uniformly distributed square mesh, where each surfel stores color, semantic, and geometric information. This square mesh-based layout covers the entire road with fewer Gaussian surfels and reduces the overlap between Gaussian surfels during training. In addition, because the road surface has no thickness, 2D Gaussian surfel is more consistent with the physical reality of the road surface than 3D Gaussian sphere. Then, unlike previous initialization methods that rely on point clouds, we introduce a vehicle pose-based initialization method to initialize the height and rotation of the Gaussian surfel. Thanks to this meshgrid Gaussian modeling and pose-based initialization, our method achieves significant speedups while improving reconstruction quality. We obtain excellent results in reconstruction of road surfaces in a variety of challenging real-world scenes.
+  
+<img width="1418" height="557" alt="image" src="https://github.com/user-attachments/assets/c0212ffd-2d96-45d9-99d4-ef76c24bccf4" />
+
+
+</details>
+
+[📃 arXiv:2505](https://arxiv.org/pdf/2405.14342) | [⌨️ Code] | [🌐 Project Page]
+
+
+#### <summary>GS-Occ3D: Scaling Vision-only Occupancy Reconstruction for Autonomous Driving with Gaussian Splatting
+>*Ground Reconstruction.*
+
+Authors: Baijun Ye, Minghui Qin, Saining Zhang, Moonjun Gong, Shaoting Zhu, Zebang Shen, Luan Zhang, Lu Zhang, Hao Zhao, Hang Zhao
+<details span>
+<summary><b>Abstract</b></summary>
+Occupancy is crucial for autonomous driving, providing essential geometric priors for perception and planning. However, existing methods predominantly rely on LiDAR-based occupancy annotations, which limits scalability and prevents leveraging vast amounts of potential crowdsourced data for auto-labeling. To address this, we propose GS-Occ3D, a scalable vision-only framework that directly reconstructs occupancy. Vision-only occupancy reconstruction poses significant challenges due to sparse viewpoints, dynamic scene elements, severe occlusions, and long-horizon motion. Existing vision-based methods primarily rely on mesh representation, which suffer from incomplete geometry and additional post-processing, limiting scalability. To overcome these issues, GS-Occ3D optimizes an explicit occupancy representation using an Octree-based Gaussian Surfel formulation, ensuring efficiency and scalability. Additionally, we decompose scenes into static background, ground, and dynamic objects, enabling tailored modeling strategies: (1) Ground is explicitly reconstructed as a dominant structural element, significantly improving large-area consistency; (2) Dynamic vehicles are separately modeled to better capture motion-related occupancy patterns. Extensive experiments on the Waymo dataset demonstrate that GS-Occ3D achieves state-of-the-art geometry reconstruction results. By curating vision-only binary occupancy labels from diverse urban scenes, we show their effectiveness for downstream occupancy models on Occ3D-Waymo and superior zero-shot generalization on Occ3D-nuScenes. It highlights the potential of large-scale vision-based occupancy reconstruction as a new paradigm for scalable auto-labeling.
+
+<img width="1555" height="803" alt="image" src="https://github.com/user-attachments/assets/a7b8f8c6-7c19-4f7d-bf1e-bb5a3de446c0" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.19451) | [⌨️ Code] | [🌐 Project Page](https://gs-occ3d.github.io/)
+
+
+#### <summary>MagicRoad: Semantic-Aware 3D Road Surface Reconstruction via Obstacle Inpainting
+>*video diffusion*
+
+Authors: Xingyue Peng, Yuandong Lyu, Lang Zhang, Jian Zhu, Songtao Wang, Jiaxin Deng, Songxin Lu, Weiliang Ma, Dangen She, Peng Jia, XianPeng Lang
+<details span>
+<summary><b>Abstract</b></summary>
+Road surface reconstruction is essential for autonomous driving, supporting centimeter-accurate lane perception and high-definition mapping in complex urban environments. While recent methods based on mesh rendering or 3D Gaussian splatting (3DGS) achieve promising results under clean and static conditions, they remain vulnerable to occlusions from dynamic agents, visual clutter from static obstacles, and appearance degradation caused by lighting and weather changes. We present a robust reconstruction framework that integrates occlusion-aware 2D Gaussian surfels with semantic-guided color enhancement to recover clean, consistent road surfaces. Our method leverages a planar-adapted Gaussian representation for efficient large-scale modeling, employs segmentation-guided video inpainting to remove both dynamic and static foreground objects, and enhances color coherence via semantic-aware correction in HSV space. Extensive experiments on urban-scale datasets demonstrate that our framework produces visually coherent and geometrically faithful reconstructions, significantly outperforming prior methods under real-world conditions.
+  
+<img width="1162" height="487" alt="image" src="https://github.com/user-attachments/assets/cea82fde-7d83-403c-bc5d-ea67715e0631" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.23340) | [⌨️ Code] | [🌐 Project Page]
+
+
+#### <summary>CRUISE: Cooperative Reconstruction and Editing in V2X Scenarios using Gaussian Splatting
+
+Authors: Haoran Xu, Saining Zhang, Peishuo Li, Baijun Ye, Xiaoxue Chen, Huan-ang Gao, Jv Zheng, Xiaowei Song, Ziqiao Peng, Run Miao, Jinrang Jia, Yifeng Shi, Guangqi Yi, Hang Zhao, Hao Tang, Hongyang Li, Kaicheng Yu, Hao Zhao
+<details span>
+<summary><b>Abstract</b></summary>
+Vehicle-to-everything (V2X) communication plays a crucial role in autonomous driving, enabling cooperation between vehicles and infrastructure. While simulation has significantly contributed to various autonomous driving tasks, its potential for data generation and augmentation in V2X scenarios remains underexplored. In this paper, we introduce CRUISE, a comprehensive reconstruction-and-synthesis framework designed for V2X driving environments. CRUISE employs decomposed Gaussian Splatting to accurately reconstruct real-world scenes while supporting flexible editing. By decomposing dynamic traffic participants into editable Gaussian representations, CRUISE allows for seamless modification and augmentation of driving scenes. Furthermore, the framework renders images from both ego-vehicle and infrastructure views, enabling large-scale V2X dataset augmentation for training and evaluation. Our experimental results demonstrate that: 1) CRUISE reconstructs real-world V2X driving scenes with high fidelity; 2) using CRUISE improves 3D detection across ego-vehicle, infrastructure, and cooperative views, as well as cooperative 3D tracking on the V2X-Seq benchmark; and 3) CRUISE effectively generates challenging corner cases.
+
+<img width="1878" height="468" alt="image" src="https://github.com/user-attachments/assets/ed85c9af-fd5c-4740-9f58-08fe227109f1" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.18473) | [⌨️ Code](https://github.com/SainingZhang/CRUISE) | [🌐 Project Page]
+
+
+
+
+#### <summary>I2V-GS: Infrastructure-to-Vehicle View Transformation with Gaussian Splatting for Autonomous Driving Data Generation
+>*For a fair comparison, we train the 3DGS-based methods using the first frame and 4DGS-based methods using the first 10 frames ?*
+
+Authors: Jialei Chen, Wuhao Xu, Sipeng He, Baoru Huang, Dongchun Ren
+<details span>
+<summary><b>Abstract</b></summary>
+Vast and high-quality data are essential for end-to-end autonomous driving systems. However, current driving data is mainly collected by vehicles, which is expensive and inefficient. A potential solution lies in synthesizing data from real-world images. Recent advancements in 3D reconstruction demonstrate photorealistic novel view synthesis, highlighting the potential of generating driving data from images captured on the road. This paper introduces a novel method, I2V-GS, to transfer the Infrastructure view To the Vehicle view with Gaussian Splatting. Reconstruction from sparse infrastructure viewpoints and rendering under large view transformations is a challenging problem. We adopt the adaptive depth warp to generate dense training views. To further expand the range of views, we employ a cascade strategy to inpaint warped images, which also ensures inpainting content is consistent across views. To further ensure the reliability of the diffusion model, we utilize the cross-view information to perform a confidenceguided optimization. Moreover, we introduce RoadSight, a multi-modality, multi-view dataset from real scenarios in infrastructure views. To our knowledge, I2V-GS is the first framework to generate autonomous driving datasets with infrastructure-vehicle view transformation. Experimental results demonstrate that I2V-GS significantly improves synthesis quality under vehicle view, outperforming StreetGaussian in NTA-Iou, NTL-Iou, and FID by 45.7%, 34.2%, and 14.9%, respectively.
+  
+<img width="1294" height="616" alt="image" src="https://github.com/user-attachments/assets/967a520a-1494-4996-85bd-9bf02e9c8402" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.23683) | [⌨️ Code] | [🌐 Project Page]
+
 
 <br>
 <br>
@@ -566,19 +642,6 @@ Authors: Ruijie Zhu, Mulin Yu, Linning Xu, Lihan Jiang, Yixuan Li, Tianzhu Zhang
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.15454) | [⌨️ Code](https://github.com/RuijieZhu94/ObjectGS) | [🌐 Project Page](https://ruijiezhu94.github.io/ObjectGS_page/)
 
 
-#### <summary>CRUISE: Cooperative Reconstruction and Editing in V2X Scenarios using Gaussian Splatting
-
-Authors: Haoran Xu, Saining Zhang, Peishuo Li, Baijun Ye, Xiaoxue Chen, Huan-ang Gao, Jv Zheng, Xiaowei Song, Ziqiao Peng, Run Miao, Jinrang Jia, Yifeng Shi, Guangqi Yi, Hang Zhao, Hao Tang, Hongyang Li, Kaicheng Yu, Hao Zhao
-<details span>
-<summary><b>Abstract</b></summary>
-Vehicle-to-everything (V2X) communication plays a crucial role in autonomous driving, enabling cooperation between vehicles and infrastructure. While simulation has significantly contributed to various autonomous driving tasks, its potential for data generation and augmentation in V2X scenarios remains underexplored. In this paper, we introduce CRUISE, a comprehensive reconstruction-and-synthesis framework designed for V2X driving environments. CRUISE employs decomposed Gaussian Splatting to accurately reconstruct real-world scenes while supporting flexible editing. By decomposing dynamic traffic participants into editable Gaussian representations, CRUISE allows for seamless modification and augmentation of driving scenes. Furthermore, the framework renders images from both ego-vehicle and infrastructure views, enabling large-scale V2X dataset augmentation for training and evaluation. Our experimental results demonstrate that: 1) CRUISE reconstructs real-world V2X driving scenes with high fidelity; 2) using CRUISE improves 3D detection across ego-vehicle, infrastructure, and cooperative views, as well as cooperative 3D tracking on the V2X-Seq benchmark; and 3) CRUISE effectively generates challenging corner cases.
-
-<img width="1878" height="468" alt="image" src="https://github.com/user-attachments/assets/ed85c9af-fd5c-4740-9f58-08fe227109f1" />
-
-</details>
-
-[📃 arXiv:2507](https://arxiv.org/pdf/2507.18473) | [⌨️ Code](https://github.com/SainingZhang/CRUISE) | [🌐 Project Page]
-
 
 #### <summary>Gaussian Set Surface Reconstruction through Per-Gaussian Optimization
 >*enforce single-view normal consistency and multi-view photometric consistency on each Gaussian instance*
@@ -609,3 +672,19 @@ Cooperative perception aims to address the inherent limitations of single-vehicl
 </details>
 
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.19239) | [⌨️ Code](https://github.com/zhongjiaru/CoopTrack) | [🌐 Project Page]
+
+
+
+#### <summary>Decomposing Densification in Gaussian Splatting for Faster 3D Scene Reconstruction
+> *the clone operation is mainly responsible for local refinement, while the split operation takes charge of the global diffusion. *
+
+Authors: Binxiao Huang, Zhengwu Liu, Ngai Wong
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (GS) has emerged as a powerful representation for high-quality scene reconstruction, offering compelling rendering quality. However, the training process of GS often suffers from slow convergence due to inefficient densification and suboptimal spatial distribution of Gaussian primitives. In this work, we present a comprehensive analysis of the split and clone operations during the densification phase, revealing their distinct roles in balancing detail preservation and computational efficiency. Building upon this analysis, we propose a global-to-local densification strategy, which facilitates more efficient growth of Gaussians across the scene space, promoting both global coverage and local refinement. To cooperate with the proposed densification strategy and promote sufficient diffusion of Gaussian primitives in space, we introduce an energy-guided coarse-to-fine multi-resolution training framework, which gradually increases resolution based on energy density in 2D images. Additionally, we dynamically prune unnecessary Gaussian primitives to speed up the training. Extensive experiments on MipNeRF-360, Deep Blending, and Tanks & Temples datasets demonstrate that our approach significantly accelerates training,achieving over 2x speedup with fewer Gaussian primitives and superior reconstruction performance.
+
+<img width="1848" height="547" alt="image" src="https://github.com/user-attachments/assets/45b1065a-8f95-47a5-acfc-c30c1eca8d2f" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.20239) | [⌨️ Code] | [🌐 Project Page]
