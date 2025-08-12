@@ -326,6 +326,21 @@ Dynamic driving scene reconstruction is of great importance in fields like digit
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.12114) | [⌨️ Code] | [🌐 Project Page]
 
 
+#### <summary>GS-Occ3D: Scaling Vision-only Occupancy Reconstruction for Autonomous Driving with Gaussian Splatting
+>*Ground Reconstruction.*
+
+Authors: Baijun Ye, Minghui Qin, Saining Zhang, Moonjun Gong, Shaoting Zhu, Zebang Shen, Luan Zhang, Lu Zhang, Hao Zhao, Hang Zhao
+<details span>
+<summary><b>Abstract</b></summary>
+Occupancy is crucial for autonomous driving, providing essential geometric priors for perception and planning. However, existing methods predominantly rely on LiDAR-based occupancy annotations, which limits scalability and prevents leveraging vast amounts of potential crowdsourced data for auto-labeling. To address this, we propose GS-Occ3D, a scalable vision-only framework that directly reconstructs occupancy. Vision-only occupancy reconstruction poses significant challenges due to sparse viewpoints, dynamic scene elements, severe occlusions, and long-horizon motion. Existing vision-based methods primarily rely on mesh representation, which suffer from incomplete geometry and additional post-processing, limiting scalability. To overcome these issues, GS-Occ3D optimizes an explicit occupancy representation using an Octree-based Gaussian Surfel formulation, ensuring efficiency and scalability. Additionally, we decompose scenes into static background, ground, and dynamic objects, enabling tailored modeling strategies: (1) Ground is explicitly reconstructed as a dominant structural element, significantly improving large-area consistency; (2) Dynamic vehicles are separately modeled to better capture motion-related occupancy patterns. Extensive experiments on the Waymo dataset demonstrate that GS-Occ3D achieves state-of-the-art geometry reconstruction results. By curating vision-only binary occupancy labels from diverse urban scenes, we show their effectiveness for downstream occupancy models on Occ3D-Waymo and superior zero-shot generalization on Occ3D-nuScenes. It highlights the potential of large-scale vision-based occupancy reconstruction as a new paradigm for scalable auto-labeling.
+
+<img width="1555" height="803" alt="image" src="https://github.com/user-attachments/assets/a7b8f8c6-7c19-4f7d-bf1e-bb5a3de446c0" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2507.19451) | [⌨️ Code] | [🌐 Project Page](https://gs-occ3d.github.io/)
+
+
 #### <summary>RoGs: Large Scale Road Surface Reconstruction with Meshgrid Gaussian
 >*vehicle poses are commonly parallel to the road*
 
@@ -341,20 +356,6 @@ Road surface reconstruction plays a crucial role in autonomous driving, which ca
 
 [📃 arXiv:2505](https://arxiv.org/pdf/2405.14342) | [⌨️ Code] | [🌐 Project Page]
 
-
-#### <summary>GS-Occ3D: Scaling Vision-only Occupancy Reconstruction for Autonomous Driving with Gaussian Splatting
->*Ground Reconstruction.*
-
-Authors: Baijun Ye, Minghui Qin, Saining Zhang, Moonjun Gong, Shaoting Zhu, Zebang Shen, Luan Zhang, Lu Zhang, Hao Zhao, Hang Zhao
-<details span>
-<summary><b>Abstract</b></summary>
-Occupancy is crucial for autonomous driving, providing essential geometric priors for perception and planning. However, existing methods predominantly rely on LiDAR-based occupancy annotations, which limits scalability and prevents leveraging vast amounts of potential crowdsourced data for auto-labeling. To address this, we propose GS-Occ3D, a scalable vision-only framework that directly reconstructs occupancy. Vision-only occupancy reconstruction poses significant challenges due to sparse viewpoints, dynamic scene elements, severe occlusions, and long-horizon motion. Existing vision-based methods primarily rely on mesh representation, which suffer from incomplete geometry and additional post-processing, limiting scalability. To overcome these issues, GS-Occ3D optimizes an explicit occupancy representation using an Octree-based Gaussian Surfel formulation, ensuring efficiency and scalability. Additionally, we decompose scenes into static background, ground, and dynamic objects, enabling tailored modeling strategies: (1) Ground is explicitly reconstructed as a dominant structural element, significantly improving large-area consistency; (2) Dynamic vehicles are separately modeled to better capture motion-related occupancy patterns. Extensive experiments on the Waymo dataset demonstrate that GS-Occ3D achieves state-of-the-art geometry reconstruction results. By curating vision-only binary occupancy labels from diverse urban scenes, we show their effectiveness for downstream occupancy models on Occ3D-Waymo and superior zero-shot generalization on Occ3D-nuScenes. It highlights the potential of large-scale vision-based occupancy reconstruction as a new paradigm for scalable auto-labeling.
-
-<img width="1555" height="803" alt="image" src="https://github.com/user-attachments/assets/a7b8f8c6-7c19-4f7d-bf1e-bb5a3de446c0" />
-
-</details>
-
-[📃 arXiv:2507](https://arxiv.org/pdf/2507.19451) | [⌨️ Code] | [🌐 Project Page](https://gs-occ3d.github.io/)
 
 
 #### <summary>MagicRoad: Semantic-Aware 3D Road Surface Reconstruction via Obstacle Inpainting
