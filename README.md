@@ -577,6 +577,21 @@ We propose a novel memory mechanism to build video generators that can explore e
 [📃 arXiv:2506](https://arxiv.org/pdf/2506.18903) | [⌨️ Code](https://github.com/runjiali-rl/vmem) | [🌐 Project Page](https://v-mem.github.io/)
 
 
+#### <summary>SAM4D: Segment Anything in Camera and LiDAR Streams
+> *lidar segmentation*
+
+Authors: Jianyun Xu, Song Wang, Ziqian Ni, Chunyong Hu, Sheng Yang, Jianke Zhu, Qiang Li
+<details span>
+<summary><b>Abstract</b></summary>
+We present SAM4D, a multi-modal and temporal foundation model designed for promptable segmentation across camera and LiDAR streams. Unified Multi-modal Positional Encoding (UMPE) is introduced to align camera and LiDAR features in a shared 3D space, enabling seamless cross-modal prompting and interaction. Additionally, we propose Motion-aware Cross-modal Memory Attention (MCMA), which leverages ego-motion compensation to enhance temporal consistency and long-horizon feature retrieval, ensuring robust segmentation across dynamically changing autonomous driving scenes. To avoid annotation bottlenecks, we develop a multi-modal automated data engine that synergizes VFM-driven video masklets, spatiotemporal 4D reconstruction, and cross-modal masklet fusion. This framework generates camera-LiDAR aligned pseudo-labels at a speed orders of magnitude faster than human annotation while preserving VFM-derived semantic fidelity in point cloud representations. We conduct extensive experiments on the constructed Waymo-4DSeg, which demonstrate the powerful cross-modal segmentation ability and great potential in data annotation of proposed SAM4D.
+
+<img width="1992" height="822" alt="image" src="https://github.com/user-attachments/assets/98e5dd4e-1141-421c-9b09-0935242c859d" />
+
+</details>
+
+[📃 arXiv:2506](https://arxiv.org/pdf/2506.21547) | [⌨️ Code](https://github.com/CN-ADLab/SAM4D) | [🌐 Project Page](https://sam4d-project.github.io/)
+
+
 
 #### <summary>VoteSplat: Hough Voting Gaussian Splatting for 3D Scene Understanding
 > *3D points vote for 2d center, 3D point vote for 2d plane in driving scenes?*
