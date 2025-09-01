@@ -211,6 +211,19 @@ Vision-Language Models (VLMs) have recently emerged as a promising paradigm in a
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.02028) | [⌨️ Code] | [🌐 Project Page]
 
+#### <summary>IRL-VLA: Training an Vision-Language-Action Policy via Reward World Model
+
+Authors: Anqing Jiang, Yu Gao, Yiru Wang, Zhigang Sun, Shuo Wang, Yuwen Heng, Hao Sun, Shichen Tang, Lijuan Zhu, Jinhao Chai, Jijun Wang, Zichong Gu, Hao Jiang, Li Sun
+<details span>
+<summary><b>Abstract</b></summary>
+Vision-Language-Action (VLA) models have demonstrated potential in autonomous driving. However, two critical challenges hinder their development: (1) Existing VLA architectures are typically based on imitation learning in open-loop setup which tends to capture the recorded behaviors in the dataset, leading to suboptimal and constrained performance, (2) Close-loop training relies heavily on high-fidelity sensor simulation, where domain gaps and computational inefficiencies pose significant barriers. In this paper, we introduce IRL-VLA, a novel close-loop Reinforcement Learning via \textbf{I}nverse \textbf{R}einforcement \textbf{L}earning reward world model with a self-built VLA approach. Our framework proceeds in a three-stage paradigm: In the first stage, we propose a VLA architecture and pretrain the VLA policy via imitation learning. In the second stage, we construct a lightweight reward world model via inverse reinforcement learning to enable efficient close-loop reward computation. To further enhance planning performance, finally, we design specialized reward world model guidence reinforcement learning via PPO(Proximal Policy Optimization) to effectively balance the safety incidents, comfortable driving, and traffic efficiency. Our approach achieves state-of-the-art performance in NAVSIM v2 end-to-end driving benchmark, 1st runner up in CVPR2025 Autonomous Grand Challenge. We hope that our framework will accelerate VLA research in close-loop autonomous driving.
+
+<img width="2146" height="698" alt="image" src="https://github.com/user-attachments/assets/1a7db595-439f-4702-9af6-c3c06c25ffc3" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.06571) | [⌨️ Code](https://github.com/IRL-VLA/IRL-VLA) | [🌐 Project Page]
+
 
 <br>
 <br>
@@ -445,6 +458,21 @@ Dynamic urban scene modeling is a rapidly evolving area with broad applications.
 </details>
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.02129) | [⌨️ Code](https://github.com/pulangk97/VDEGaussian) | [🌐 Project Page](https://pulangk97.github.io/VDEGaussian-Project/)
+
+
+#### <summary>GaussianUpdate: Continual 3D Gaussian Splatting Update for Changing Environments
+>*combines 3D Gaussian representation with continual learning for the first time*
+
+Authors: Lin Zeng, Boming Zhao, Jiarui Hu, Xujie Shen, Ziqiang Dang, Hujun Bao, Zhaopeng Cui
+<details span>
+<summary><b>Abstract</b></summary>
+Novel view synthesis with neural models has advanced rapidly in recent years, yet adapting these models to scene changes remains an open problem. Existing methods are either labor-intensive, requiring extensive model retraining, or fail to capture detailed types of changes over time. In this paper, we present GaussianUpdate, a novel approach that combines 3D Gaussian representation with continual learning to address these challenges. Our method effectively updates the Gaussian radiance fields with current data while preserving information from past scenes. Unlike existing methods, GaussianUpdate explicitly models different types of changes through a novel multi-stage update strategy. Additionally, we introduce a visibility-aware continual learning approach with generative replay, enabling self-aware updating without the need to store images. The experiments on the benchmark dataset demonstrate our method achieves superior and real-time rendering with the capability of visualizing changes over different times.
+
+<img width="1580" height="902" alt="image" src="https://github.com/user-attachments/assets/151b0536-d753-4cfd-8607-b3bf0cd348d8" />
+
+</details>
+
+[📃 arXiv:2507](https://arxiv.org/pdf/2508.08867) | [⌨️ Code] | [🌐 Project Page]
 
 
 <br>
@@ -779,3 +807,15 @@ Topological structures in image data, such as connected components and loops, pl
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.01574) | [⌨️ Code] | [🌐 Project Page]
 
 
+#### <summary>Progressive Bird's Eye View Perception for Safety-Critical Autonomous Driving: A Comprehensive Survey
+
+Authors: Yan Gong, Naibang Wang, Jianli Lu, Xinyu Zhang, Yongsheng Gao, Jie Zhao, Zifan Huang, Haozhi Bai, Nanxin Zeng, Nayu Su, Lei Yang, Ziying Song, Xiaoxi Hu, Xinmin Jiang, Xiaojuan Zhang, Susanto Rahardja
+<details span>
+<summary><b>Abstract</b></summary>
+Bird's-Eye-View (BEV) perception has become a foundational paradigm in autonomous driving, enabling unified spatial representations that support robust multi-sensor fusion and multi-agent collaboration. As autonomous vehicles transition from controlled environments to real-world deployment, ensuring the safety and reliability of BEV perception in complex scenarios - such as occlusions, adverse weather, and dynamic traffic - remains a critical challenge. This survey provides the first comprehensive review of BEV perception from a safety-critical perspective, systematically analyzing state-of-the-art frameworks and implementation strategies across three progressive stages: single-modality vehicle-side, multimodal vehicle-side, and multi-agent collaborative perception. Furthermore, we examine public datasets encompassing vehicle-side, roadside, and collaborative settings, evaluating their relevance to safety and robustness. We also identify key open-world challenges - including open-set recognition, large-scale unlabeled data, sensor degradation, and inter-agent communication latency - and outline future research directions, such as integration with end-to-end autonomous driving systems, embodied intelligence, and large language models.
+
+<img width="1168" height="960" alt="image" src="https://github.com/user-attachments/assets/d8aa50ad-73b1-4c15-a064-6f1f5c65ce7c" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.07560) | [⌨️ Code] | [🌐 Project Page]
