@@ -488,8 +488,49 @@ Reconstructing dynamic driving scenes from dashcam videos has attracted increasi
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.12015) | [⌨️ Code] | [🌐 Project Page](https://instdrive.github.io/)
 
+#### <summary>Distilled-3DGS:Distilled 3D Gaussian Splatting
+>*propose a voxel histogram-based structural loss to enhance the structural learning capability of the student model*
+
+Authors: Lintao Xiang, Xinkai Chen, Jianhuang Lai, Guangcong Wang
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3DGS) has exhibited remarkable efficacy in novel view synthesis (NVS). However, it suffers from a significant drawback: achieving high-fidelity rendering typically necessitates a large number of 3D Gaussians, resulting in substantial memory consumption and storage requirements. To address this challenge, we propose the first knowledge distillation framework for 3DGS, featuring various teacher models, including vanilla 3DGS, noise-augmented variants, and dropout-regularized versions. The outputs of these teachers are aggregated to guide the optimization of a lightweight student model. To distill the hidden geometric structure, we propose a structural similarity loss to boost the consistency of spatial geometric distributions between the student and teacher model. Through comprehensive quantitative and qualitative evaluations across diverse datasets, the proposed Distilled-3DGS, a simple yet effective framework without bells and whistles, achieves promising rendering results in both rendering quality and storage efficiency compared to state-of-the-art methods.
+
+<img width="1564" height="810" alt="image" src="https://github.com/user-attachments/assets/49d5dabb-fe49-4832-b575-f16bc4ba3105" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.14037) | [⌨️ Code](https://github.com/lt-xiang/Distilled-3DGS) | [🌐 Project Page](https://distilled3dgs.github.io/)
 
 
+#### <summary>Online 3D Gaussian Splatting Modeling with Novel View Selection
+>*largest eigenvalue and positional gradients for Uncertainty Estimation*
+
+Authors: Byeonggwon Lee, Junkyu Park, Khang Truong Giang, Soohwan Song
+<details span>
+<summary><b>Abstract</b></summary>
+This study addresses the challenge of generating online 3D Gaussian Splatting (3DGS) models from RGB-only frames. Previous studies have employed dense SLAM techniques to estimate 3D scenes from keyframes for 3DGS model construction. However, these methods are limited by their reliance solely on keyframes, which are insufficient to capture an entire scene, resulting in incomplete reconstructions. Moreover, building a generalizable model requires incorporating frames from diverse viewpoints to achieve broader scene coverage. However, online processing restricts the use of many frames or extensive training iterations. Therefore, we propose a novel method for high-quality 3DGS modeling that improves model completeness through adaptive view selection. By analyzing reconstruction quality online, our approach selects optimal non-keyframes for additional training. By integrating both keyframes and selected non-keyframes, the method refines incomplete regions from diverse viewpoints, significantly enhancing completeness. We also present a framework that incorporates an online multi-view stereo approach, ensuring consistency in 3D information throughout the 3DGS modeling process. Experimental results demonstrate that our method outperforms state-of-the-art methods, delivering exceptional performance in complex outdoor scenes.
+
+<img width="2121" height="725" alt="image" src="https://github.com/user-attachments/assets/5425d485-71f2-40a1-90d2-4c3e0e5ff929" />
+
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.14014) | [⌨️ Code] | [🌐 Project Page]
+
+#### <summary>DriveSplat: Decoupled Driving Scene Reconstruction with Geometry-enhanced Partitioned Neural Gaussians
+>*near-to-far + depth and normal*
+
+Authors: Cong Wang, Xianda Guo, Wenbo Xu, Wei Tian, Ruiqi Song, Chenming Zhang, Lingxi Li, Long Chen
+<details span>
+<summary><b>Abstract</b></summary>
+In the realm of driving scenarios, the presence of rapidly moving vehicles, pedestrians in motion, and large-scale static backgrounds poses significant challenges for 3D scene reconstruction. Recent methods based on 3D Gaussian Splatting address the motion blur problem by decoupling dynamic and static components within the scene. However, these decoupling strategies overlook background optimization with adequate geometry relationships and rely solely on fitting each training view by adding Gaussians. Therefore, these models exhibit limited robustness in rendering novel views and lack an accurate geometric representation. To address the above issues, we introduce DriveSplat, a high-quality reconstruction method for driving scenarios based on neural Gaussian representations with dynamic-static decoupling. To better accommodate the predominantly linear motion patterns of driving viewpoints, a region-wise voxel initialization scheme is employed, which partitions the scene into near, middle, and far regions to enhance close-range detail representation. Deformable neural Gaussians are introduced to model non-rigid dynamic actors, whose parameters are temporally adjusted by a learnable deformation network. The entire framework is further supervised by depth and normal priors from pre-trained models, improving the accuracy of geometric structures. Our method has been rigorously evaluated on the Waymo and KITTI datasets, demonstrating state-of-the-art performance in novel-view synthesis for driving scenarios.
+
+<img width="1660" height="556" alt="image" src="https://github.com/user-attachments/assets/6ec9bb6b-70f8-46b0-8ab8-42218d79fc41" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.15376) | [⌨️ Code](https://github.com/Michael-Evans-Savitar/DriveSplat) | [🌐 Project Page](https://physwm.github.io/drivesplat/)
 
 
 
@@ -850,3 +891,17 @@ Effective image tokenization is crucial for both multi-modal understanding and g
 </details>
 
 [📃 arXiv:2501](https://arxiv.org/pdf/2501.15619v1) | [⌨️ Code](https://github.com/ChrisDong-THU/GaussianToken) | [🌐 Project Page]
+
+
+#### <summary>ROVR-Open-Dataset: A Large-Scale Depth Dataset for Autonomous Driving
+
+Authors: Xianda Guo, Ruijun Zhang, Yiqun Duan, Ruilin Wang, Keyuan Zhou, Wenzhao Zheng, Wenke Huang, Gangwei Xu, Mike Horton, Yuan Si, Hao Zhao, Long Chen
+<details span>
+<summary><b>Abstract</b></summary>
+Depth estimation is a fundamental task for 3D scene understanding in autonomous driving, robotics, and augmented reality. Existing depth datasets, such as KITTI, nuScenes, and DDAD, have advanced the field but suffer from limitations in diversity and scalability. As benchmark performance on these datasets approaches saturation, there is an increasing need for a new generation of large-scale, diverse, and cost-efficient datasets to support the era of foundation models and multi-modal learning. To address these challenges, we introduce a large-scale, diverse, frame-wise continuous dataset for depth estimation in dynamic outdoor driving environments, comprising 20K video frames to evaluate existing methods. Our lightweight acquisition pipeline ensures broad scene coverage at low cost, while sparse yet statistically sufficient ground truth enables robust training. Compared to existing datasets, ours presents greater diversity in driving scenarios and lower depth density, creating new challenges for generalization. Benchmark experiments with standard monocular depth estimation models validate the dataset's utility and highlight substantial performance gaps in challenging conditions, establishing a new platform for advancing depth estimation research.
+
+<img width="1770" height="999" alt="image" src="https://github.com/user-attachments/assets/21da186e-3ecd-4821-a628-d8c36c4537f9" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.13977) | [⌨️ Code](https://github.com/rovr-network/ROVR-Open-Dataset) | [🌐 Project Page](https://xiandaguo.net/ROVR-Open-Dataset/)
