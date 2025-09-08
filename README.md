@@ -819,3 +819,16 @@ Bird's-Eye-View (BEV) perception has become a foundational paradigm in autonomou
 </details>
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.07560) | [⌨️ Code] | [🌐 Project Page]
+
+#### <summary>GaussianToken: An Effective Image Tokenizer with 2D Gaussian Splatting
+
+Authors: Jiajun Dong, Chengkun Wang, Wenzhao Zheng, Lei Chen, Jiwen Lu, Yansong Tang
+<details span>
+<summary><b>Abstract</b></summary>
+Effective image tokenization is crucial for both multi-modal understanding and generation tasks due to the necessity of the alignment with discrete text data. To this end, existing approaches utilize vector quantization (VQ) to project pixels onto a discrete codebook and reconstruct images from the discrete representation. However, compared with the continuous latent space, the limited discrete codebook space significantly restrict the representational ability of these image tokenizers. In this paper, we propose GaussianToken: An Effective Image Tokenizer with 2D Gaussian Splatting as a solution. We first represent the encoded samples as multiple flexible featured 2D Gaussians characterized by positions, rotation angles, scaling factors, and feature coefficients. We adopt the standard quantization for the Gaussian features and then concatenate the quantization results with the other intrinsic Gaussian parameters before the corresponding splatting operation and the subsequent decoding module. In general, GaussianToken integrates the local influence of 2D Gaussian distribution into the discrete space and thus enhances the representation capability of the image tokenizer. Competitive reconstruction performances on CIFAR, Mini-ImageNet, and ImageNet-1K demonstrate the effectiveness of our framework.
+
+<img width="1502" height="683" alt="image" src="https://github.com/user-attachments/assets/0f8d186e-8a42-4caf-b060-6fc2eef37103" />
+
+</details>
+
+[📃 arXiv:2501](https://arxiv.org/pdf/2501.15619v1) | [⌨️ Code](https://github.com/ChrisDong-THU/GaussianToken) | [🌐 Project Page]
