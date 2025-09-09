@@ -905,3 +905,20 @@ Depth estimation is a fundamental task for 3D scene understanding in autonomous 
 </details>
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.13977) | [⌨️ Code](https://github.com/rovr-network/ROVR-Open-Dataset) | [🌐 Project Page](https://xiandaguo.net/ROVR-Open-Dataset/)
+
+
+#### <summary>CityGaussianV2: Efficient and Geometrically Accurate Reconstruction for Large-Scale Scenes
+>*As evidenced in the left portion of Fig. 3, these tiny, sand-like projected points contribute substantially to points with high gradients. And they belong to those with extreme elongation. Moreover, some points project smaller than one pixel, resulting in their covariance being replaced by a fixed value through the antialiased low-pass filter. Consequently, these points cannot properly adjust their scaling and rotation with valid gradients.*
+
+Authors: Yang Liu, Chuanchen Luo, Zhongkai Mao, Junran Peng, Zhaoxiang Zhang
+<details span>
+<summary><b>Abstract</b></summary>
+Recently, 3D Gaussian Splatting (3DGS) has revolutionized radiance field reconstruction, manifesting efficient and high-fidelity novel view synthesis. However, accurately representing surfaces, especially in large and complex scenarios, remains a significant challenge due to the unstructured nature of 3DGS. In this paper, we present CityGaussianV2, a novel approach for large-scale scene reconstruction that addresses critical challenges related to geometric accuracy and efficiency. Building on the favorable generalization capabilities of 2D Gaussian Splatting (2DGS), we address its convergence and scalability issues. Specifically, we implement a decomposed-gradient-based densification and depth regression technique to eliminate blurry artifacts and accelerate convergence. To scale up, we introduce an elongation filter that mitigates Gaussian count explosion caused by 2DGS degeneration. Furthermore, we optimize the CityGaussian pipeline for parallel training, achieving up to 10 compression, at least 25% savings in training time, and a 50% decrease in memory usage. We also established standard geometry benchmarks under large-scale scenes. Experimental results demonstrate that our method strikes a promising balance between visual quality, geometric accuracy, as well as storage and training costs. 
+
+![Uploading image.png…]()
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2411.00771) | [⌨️ Code](https://github.com/Linketic/CityGaussian) | [🌐 Project Page](https://dekuliutesla.github.io/CityGaussianV2/)
+
+
