@@ -159,6 +159,34 @@ Training robot policies within a learned world model is trending due to the inef
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.17600) | [⌨️ Code] | [🌐 Project Page](https://gaussian-world-model.github.io/)
 
+#### <summary>SynthDrive: Scalable Real2Sim2Real Sensor Simulation Pipeline for High-Fidelity Asset Generation and Driving Data Synthesis
+>*Sensor Simulation Pipeline*
+
+Authors: Zhengqing Chen, Ruohong Mei, Xiaoyang Guo, Qingjie Wang, Yubin Hu, Wei Yin, Weiqiang Ren, Qian Zhang
+<details span>
+<summary><b>Abstract</b></summary>
+In the field of autonomous driving, sensor simulation is essential for generating rare and diverse scenarios that are difficult to capture in real-world environments. Current solutions fall into two categories: 1) CG-based methods, such as CARLA, which lack diversity and struggle to scale to the vast array of rare cases required for robust perception training; and 2) learning-based approaches, such as NeuSim, which are limited to specific object categories (vehicles) and require extensive multi-sensor data, hindering their applicability to generic objects. To address these limitations, we propose a scalable real2sim2real system that leverages 3D generation to automate asset mining, generation, and rare-case data synthesis.
+
+<img width="1515" height="774" alt="image" src="https://github.com/user-attachments/assets/1974e415-e0b3-470f-9eb8-90193e34752e" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2509.06798) | [⌨️ Code] | [🌐 Project Page]
+
+
+#### <summary>UrbanTwin: High-Fidelity Synthetic Replicas of Roadside Lidar Datasets
+>*Sensor Simulation Pipeline*
+
+Authors: Muhammad Shahbaz, Shaurya Agarwal
+<details span>
+<summary><b>Abstract</b></summary>
+This article presents UrbanTwin datasets - high-fidelity, realistic replicas of three public roadside lidar datasets: LUMPI, V2X-Real-IC, and TUMTraf-I. Each UrbanTwin dataset contains 10K annotated frames corresponding to one of the public datasets. Annotations include 3D bounding boxes, instance segmentation labels, and tracking IDs for six object classes, along with semantic segmentation labels for nine classes. These datasets are synthesized using emulated lidar sensors within realistic digital twins, modeled based on surrounding geometry, road alignment at lane level, and the lane topology and vehicle movement patterns at intersections of the actual locations corresponding to each real dataset. Due to the precise digital twin modeling, the synthetic datasets are well aligned with their real counterparts, offering strong standalone and augmentative value for training deep learning models on tasks such as 3D object detection, tracking, and semantic and instance segmentation. We evaluate the alignment of the synthetic replicas through statistical and structural similarity analysis with real data, and further demonstrate their utility by training 3D object detection models solely on synthetic data and testing them on real, unseen data. The high similarity scores and improved detection performance, compared to the models trained on real data, indicate that the UrbanTwin datasets effectively enhance existing benchmark datasets by increasing sample size and scene diversity. In addition, the digital twins can be adapted to test custom scenarios by modifying the design and dynamics of the simulations. To our knowledge, these are the first digitally synthesized datasets that can replace in-domain real-world datasets for lidar perception tasks. 
+
+<img width="1375" height="705" alt="image" src="https://github.com/user-attachments/assets/170749f0-2a14-4a09-9003-d2dc0cc22538" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2509.06781) | [⌨️ Code] | [🌐 Project Page]
 
 
 
