@@ -130,6 +130,38 @@ Reliable anticipation of traffic accidents is essential for advancing autonomous
 [📃 arXiv:2507](https://arxiv.org/pdf/2507.12762) | [⌨️ Code] | [🌐 Project Page]
 
 
+#### <summary>HERO: Hierarchical Extrapolation and Refresh for Efficient World Models
+>*video diffusion for world model: shallow layers exhibit high temporal variability, while deeper layers yield more stable feature representations*
+
+Authors: Quanjian Song, Xinyu Wang, Donghao Zhou, Jingyu Lin, Cunjian Chen, Yue Ma, Xiu Li
+<details span>
+<summary><b>Abstract</b></summary>
+Generation-driven world models create immersive virtual environments but suffer slow inference due to the iterative nature of diffusion models. While recent advances have improved diffusion model efficiency, directly applying these techniques to world models introduces limitations such as quality degradation. In this paper, we present HERO, a training-free hierarchical acceleration framework tailored for efficient world models. Owing to the multi-modal nature of world models, we identify a feature coupling phenomenon, wherein shallow layers exhibit high temporal variability, while deeper layers yield more stable feature representations. Motivated by this, HERO adopts hierarchical strategies to accelerate inference: (i) In shallow layers, a patch-wise refresh mechanism efficiently selects tokens for recomputation. With patch-wise sampling and frequency-aware tracking, it avoids extra metric computation and remain compatible with FlashAttention. (ii) In deeper layers, a linear extrapolation scheme directly estimates intermediate features. This completely bypasses the computations in attention modules and feed-forward networks. Our experiments show that HERO achieves a 1.73 speedup with minimal quality degradation, significantly outperforming existing diffusion acceleration methods.
+
+<img width="1613" height="329" alt="image" src="https://github.com/user-attachments/assets/d0e4d47f-d780-42ae-9908-3f9353b21101" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.17588) | [⌨️ Code] | [🌐 Project Page]
+
+
+#### <summary>GWM: Towards Scalable Gaussian World Models for Robotic Manipulation
+>*3D Gaussian VAE*
+
+Authors: Guanxing Lu, Baoxiong Jia, Puhao Li, Yixin Chen, Ziwei Wang, Yansong Tang, Siyuan Huang
+<details span>
+<summary><b>Abstract</b></summary>
+Training robot policies within a learned world model is trending due to the inefficiency of real-world interactions. The established image-based world models and policies have shown prior success, but lack robust geometric information that requires consistent spatial and physical understanding of the three-dimensional world, even pre-trained on internet-scale video sources. To this end, we propose a novel branch of world model named Gaussian World Model (GWM) for robotic manipulation, which reconstructs the future state by inferring the propagation of Gaussian primitives under the effect of robot actions. At its core is a latent Diffusion Transformer (DiT) combined with a 3D variational autoencoder, enabling fine-grained scene-level future state reconstruction with Gaussian Splatting. GWM can not only enhance the visual representation for imitation learning agent by self-supervised future prediction training, but can serve as a neural simulator that supports model-based reinforcement learning. Both simulated and real-world experiments depict that GWM can precisely predict future scenes conditioned on diverse robot actions, and can be further utilized to train policies that outperform the state-of-the-art by impressive margins, showcasing the initial data scaling potential of 3D world model.
+
+<img width="1961" height="505" alt="image" src="https://github.com/user-attachments/assets/5aea4b20-d22a-4261-865f-d174fdbf0867" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.17600) | [⌨️ Code] | [🌐 Project Page](https://gaussian-world-model.github.io/)
+
+
+
+
 
 <br>
 <br>
@@ -532,6 +564,65 @@ In the realm of driving scenarios, the presence of rapidly moving vehicles, pede
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.15376) | [⌨️ Code](https://github.com/Michael-Evans-Savitar/DriveSplat) | [🌐 Project Page](https://physwm.github.io/drivesplat/)
 
+#### <summary>ExtraGS: Geometric-Aware Trajectory Extrapolation with Uncertainty-Guided Generative Priors
+>*a new Gaussian node termed Far Field Gaussians GFFG that jointly modulates both the position and scale of each Gaussian primitive*
+
+Authors: Kaiyuan Tan, Yingying Shen, Haohui Zhu, Zhiwei Zhan, Shan Zhao, Mingfei Tu, Hongcheng Luo, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye
+<details span>
+<summary><b>Abstract</b></summary>
+Synthesizing extrapolated views from recorded driving logs is critical for simulating driving scenes for autonomous driving vehicles, yet it remains a challenging task. Recent methods leverage generative priors as pseudo ground truth, but often lead to poor geometric consistency and over-smoothed renderings. To address these limitations, we propose ExtraGS, a holistic framework for trajectory extrapolation that integrates both geometric and generative priors. At the core of ExtraGS is a novel Road Surface Gaussian(RSG) representation based on a hybrid Gaussian-Signed Distance Function (SDF) design, and Far Field Gaussians (FFG) that use learnable scaling factors to efficiently handle distant objects. Furthermore, we develop a self-supervised uncertainty estimation framework based on spherical harmonics that enables selective integration of generative priors only where extrapolation artifacts occur. Extensive experiments on multiple datasets, diverse multi-camera setups, and various generative priors demonstrate that ExtraGS significantly enhances the realism and geometric consistency of extrapolated views, while preserving high fidelity along the original trajectory.
+
+<img width="1624" height="661" alt="image" src="https://github.com/user-attachments/assets/458550cd-9eda-4eef-9b27-d63dc3e62a16" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.15529) | [⌨️ Code] | [🌐 Project Page](https://wm-research.github.io/extrags/)
+
+
+#### <summary>LSD-3D: Large-Scale 3D Driving Scene Generation with Geometry Grounding
+>*Mesh for scene by diffusion*
+
+Authors: Julian Ost, Andrea Ramazzina, Amogh Joshi, Maximilian Bömer, Mario Bijelic, Felix Heide
+<details span>
+<summary><b>Abstract</b></summary>
+Large-scale scene data is essential for training and testing in robot learning. Neural reconstruction methods have promised the capability of reconstructing large physically-grounded outdoor scenes from captured sensor data. However, these methods have baked-in static environments and only allow for limited scene control -- they are functionally constrained in scene and trajectory diversity by the captures from which they are reconstructed. In contrast, generating driving data with recent image or video diffusion models offers control, however, at the cost of geometry grounding and causality. In this work, we aim to bridge this gap and present a method that directly generates large-scale 3D driving scenes with accurate geometry, allowing for causal novel view synthesis with object permanence and explicit 3D geometry estimation. The proposed method combines the generation of a proxy geometry and environment representation with score distillation from learned 2D image priors. We find that this approach allows for high controllability, enabling the prompt-guided geometry and high-fidelity texture and structure that can be conditioned on map layouts -- producing realistic and geometrically consistent 3D generations of complex driving scenes.
+
+<img width="1624" height="661" alt="image" src="https://github.com/user-attachments/assets/97db38e6-21ff-467f-8690-45acdb4c4868" />
+
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.19204) | [⌨️ Code] | [🌐 Project Page](https://princeton-computational-imaging.github.io/LSD-3D/index.html)
+
+#### <summary>DrivingGaussian++: Towards Realistic Reconstruction and Editable Simulation for Surrounding Dynamic Driving Scenes
+>*scene editing*
+
+Authors: Yajiao Xiong, Xiaoyu Zhou, Yongtao Wan, Deqing Sun, Ming-Hsuan Yang
+<details span>
+<summary><b>Abstract</b></summary>
+We present DrivingGaussian++, an efficient and effective framework for realistic reconstructing and controllable editing of surrounding dynamic autonomous driving scenes. DrivingGaussian++ models the static background using incremental 3D Gaussians and reconstructs moving objects with a composite dynamic Gaussian graph, ensuring accurate positions and occlusions. By integrating a LiDAR prior, it achieves detailed and consistent scene reconstruction, outperforming existing methods in dynamic scene reconstruction and photorealistic surround-view synthesis. DrivingGaussian++ supports training-free controllable editing for dynamic driving scenes, including texture modification, weather simulation, and object manipulation, leveraging multi-view images and depth priors. By integrating large language models (LLMs) and controllable editing, our method can automatically generate dynamic object motion trajectories and enhance their realism during the optimization process. DrivingGaussian++ demonstrates consistent and realistic editing results and generates dynamic multi-view driving scenarios, while significantly enhancing scene diversity. 
+
+<img width="1655" height="565" alt="image" src="https://github.com/user-attachments/assets/bf3871f2-9e9a-4051-bd6e-38148f7a6760" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.20965) | [⌨️ Code] | [🌐 Project Page](https://xiong-creator.github.io/DrivingGaussian_plus.github.io/)
+
+
+#### <summary>Realistic and Controllable 3D Gaussian-Guided Object Editing for Driving Video Generation
+>*scene editing for 3dgs*
+
+Authors: Jiusi Li, Jackson Jiang, Jinyu Miao, Miao Long, Tuopu Wen, Peijin Jia, Shengxiang Liu, Chunlei Yu, Maolin Liu, Yuzhan Cai, Kun Jiang, Mengmeng Yang, Diange Yang
+<details span>
+<summary><b>Abstract</b></summary>
+Corner cases are crucial for training and validating autonomous driving systems, yet collecting them from the real world is often costly and hazardous. Editing objects within captured sensor data offers an effective alternative for generating diverse scenarios, commonly achieved through 3D Gaussian Splatting or image generative models. However, these approaches often suffer from limited visual fidelity or imprecise pose control. To address these issues, we propose G^2Editor, a framework designed for photorealistic and precise object editing in driving videos. Our method leverages a 3D Gaussian representation of the edited object as a dense prior, injected into the denoising process to ensure accurate pose control and spatial consistency. A scene-level 3D bounding box layout is employed to reconstruct occluded areas of non-target objects. Furthermore, to guide the appearance details of the edited object, we incorporate hierarchical fine-grained features as additional conditions during generation. Experiments on the Waymo Open Dataset demonstrate that G^2Editor effectively supports object repositioning, insertion, and deletion within a unified framework, outperforming existing methods in both pose controllability and visual quality, while also benefiting downstream data-driven tasks.
+
+<img width="1405" height="569" alt="image" src="https://github.com/user-attachments/assets/59332bbc-a9f2-4b88-95c9-eb3ba661aeb2" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.20471) | [⌨️ Code] | [🌐 Project Page]
+
 
 
 <br>
@@ -920,5 +1011,20 @@ Recently, 3D Gaussian Splatting (3DGS) has revolutionized radiance field reconst
 </details>
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2411.00771) | [⌨️ Code](https://github.com/Linketic/CityGaussian) | [🌐 Project Page](https://dekuliutesla.github.io/CityGaussianV2/)
+
+
+#### <summary>MeshSplat: Generalizable Sparse-View Surface Reconstruction via Gaussian Splatting
+>*Weighted Chamfer Distance Loss*
+
+Authors: Hanzhi Chang, Ruijie Zhu, Wenjie Chang, Mulin Yu, Yanzhe Liang, Jiahao Lu, Zhuoyuan Li, Tianzhu Zhang
+<details span>
+<summary><b>Abstract</b></summary>
+Surface reconstruction has been widely studied in computer vision and graphics. However, existing surface reconstruction works struggle to recover accurate scene geometry when the input views are extremely sparse. To address this issue, we propose MeshSplat, a generalizable sparse-view surface reconstruction framework via Gaussian Splatting. Our key idea is to leverage 2DGS as a bridge, which connects novel view synthesis to learned geometric priors and then transfers these priors to achieve surface reconstruction. Specifically, we incorporate a feed-forward network to predict per-view pixel-aligned 2DGS, which enables the network to synthesize novel view images and thus eliminates the need for direct 3D ground-truth supervision. To improve the accuracy of 2DGS position and orientation prediction, we propose a Weighted Chamfer Distance Loss to regularize the depth maps, especially in overlapping areas of input views, and also a normal prediction network to align the orientation of 2DGS with normal vectors predicted by a monocular normal estimator. Extensive experiments validate the effectiveness of our proposed improvement, demonstrating that our method achieves state-of-the-art performance in generalizable sparse-view mesh reconstruction tasks.
+
+<img width="1540" height="675" alt="image" src="https://github.com/user-attachments/assets/0b06f73d-0b3c-439d-9d18-d68fb6146828" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.17811) | [⌨️ Code](https://github.com/HanzhiChang/MeshSplat) | [🌐 Project Page](https://hanzhichang.github.io/meshsplat_web/)
 
 
