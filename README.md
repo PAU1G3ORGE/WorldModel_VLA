@@ -1056,3 +1056,21 @@ Surface reconstruction has been widely studied in computer vision and graphics. 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.17811) | [⌨️ Code](https://github.com/HanzhiChang/MeshSplat) | [🌐 Project Page](https://hanzhichang.github.io/meshsplat_web/)
 
 
+
+
+#### <summary>Scaling Transformer-Based Novel View Synthesis Models with Token Disentanglement and Synthetic Data
+> *Token-Disentangled (Tok-D) Transformer: In LVSM, the transformer blocks process source and target tokens in the same manner, even though the source consists of images and Pl¨ ucker rays, while the target includes only Pl¨ucker rays. Additionally, source and target image quality can differ when training with synthetic data.*
+
+Authors: Nithin Gopalakrishnan Nair, Srinivas Kaza, Xuan Luo, Vishal M. Patel, Stephen Lombardi, Jungyeon Park
+<details span>
+<summary><b>Abstract</b></summary>
+Large transformer-based models have made significant progress in generalizable novel view synthesis (NVS) from sparse input views, generating novel viewpoints without the need for test-time optimization. However, these models are constrained by the limited diversity of publicly available scene datasets, making most real-world (in-the-wild) scenes out-of-distribution. To overcome this, we incorporate synthetic training data generated from diffusion models, which improves generalization across unseen domains. While synthetic data offers scalability, we identify artifacts introduced during data generation as a key bottleneck affecting reconstruction quality. To address this, we propose a token disentanglement process within the transformer architecture, enhancing feature separation and ensuring more effective learning. This refinement not only improves reconstruction quality over standard transformers but also enables scalable training with synthetic data. As a result, our method outperforms existing models on both in-dataset and cross-dataset evaluations, achieving state-of-the-art results across multiple benchmarks while significantly reducing computational costs.
+
+<img width="1626" height="693" alt="image" src="https://github.com/user-attachments/assets/0fd8581d-8f5b-4d38-bc75-6451388f5606" />
+
+</details>
+
+[📃 arXiv:2509](https://arxiv.org/pdf/2509.06950) | [⌨️ Code] | [🌐 Project Page](https://scaling3dnvs.github.io/)
+
+
+
