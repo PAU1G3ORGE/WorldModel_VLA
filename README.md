@@ -159,7 +159,23 @@ Training robot policies within a learned world model is trending due to the inef
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.17600) | [⌨️ Code] | [🌐 Project Page](https://gaussian-world-model.github.io/)
 
-#### <summary>SynthDrive: Scalable Real2Sim2Real Sensor Simulation Pipeline for High-Fidelity Asset Generation and Driving Data Synthesis
+
+#### <summary>Realistic and Controllable 3D Gaussian-Guided Object Editing for Driving Video Generation
+>*3D Gaussian objects insert into diffusion model*
+
+Authors: Jiusi Li, Jackson Jiang, Jinyu Miao, Miao Long, Tuopu Wen, Peijin Jia, Shengxiang Liu, Chunlei Yu, Maolin Liu, Yuzhan Cai, Kun Jiang, Mengmeng Yang, Diange Yang
+<details span>
+<summary><b>Abstract</b></summary>
+Corner cases are crucial for training and validating autonomous driving systems, yet collecting them from the real world is often costly and hazardous. Editing objects within captured sensor data offers an effective alternative for generating diverse scenarios, commonly achieved through 3D Gaussian Splatting or image generative models. However, these approaches often suffer from limited visual fidelity or imprecise pose control. To address these issues, we propose G^2Editor, a framework designed for photorealistic and precise object editing in driving videos. Our method leverages a 3D Gaussian representation of the edited object as a dense prior, injected into the denoising process to ensure accurate pose control and spatial consistency. A scene-level 3D bounding box layout is employed to reconstruct occluded areas of non-target objects. Furthermore, to guide the appearance details of the edited object, we incorporate hierarchical fine-grained features as additional conditions during generation. Experiments on the Waymo Open Dataset demonstrate that G^2Editor effectively supports object repositioning, insertion, and deletion within a unified framework, outperforming existing methods in both pose controllability and visual quality, while also benefiting downstream data-driven tasks.
+
+<img width="2121" height="919" alt="image" src="https://github.com/user-attachments/assets/c28dd784-5bbe-4b42-8c0d-ec1275cf6ae2" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.20471) | [⌨️ Code] | [🌐 Project Page]
+
+
+#### <summary>UrbanTwin: High-Fidelity Synthetic Replicas of Roadside Lidar Datasets
 >*Sensor Simulation Pipeline*
 
 Authors: Zhengqing Chen, Ruohong Mei, Xiaoyang Guo, Qingjie Wang, Yubin Hu, Wei Yin, Weiqiang Ren, Qian Zhang
@@ -171,7 +187,7 @@ In the field of autonomous driving, sensor simulation is essential for generatin
 
 </details>
 
-[📃 arXiv:2508](https://arxiv.org/pdf/2509.06798) | [⌨️ Code] | [🌐 Project Page]
+[📃 arXiv:2509](https://arxiv.org/pdf/2509.06798) | [⌨️ Code] | [🌐 Project Page]
 
 
 #### <summary>UrbanTwin: High-Fidelity Synthetic Replicas of Roadside Lidar Datasets
@@ -186,7 +202,7 @@ This article presents UrbanTwin datasets - high-fidelity, realistic replicas of 
 
 </details>
 
-[📃 arXiv:2508](https://arxiv.org/pdf/2509.06781) | [⌨️ Code] | [🌐 Project Page]
+[📃 arXiv:2509](https://arxiv.org/pdf/2509.06781) | [⌨️ Code] | [🌐 Project Page]
 
 
 
@@ -1055,7 +1071,19 @@ Surface reconstruction has been widely studied in computer vision and graphics. 
 
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.17811) | [⌨️ Code](https://github.com/HanzhiChang/MeshSplat) | [🌐 Project Page](https://hanzhichang.github.io/meshsplat_web/)
 
+#### <summary>Complete Gaussian Splats from a Single Image with Denoising Diffusion Models
+> *diffusion for Splatter Images*
 
+Authors: Ziwei Liao, Mohamed Sayed, Steven L. Waslander, Sara Vicente, Daniyar Turmukhambetov, Michael Firman
+<details span>
+<summary><b>Abstract</b></summary>
+Gaussian splatting typically requires dense observations of the scene and can fail to reconstruct occluded and unobserved areas. We propose a latent diffusion model to reconstruct a complete 3D scene with Gaussian splats, including the occluded parts, from only a single image during inference. Completing the unobserved surfaces of a scene is challenging due to the ambiguity of the plausible surfaces. Conventional methods use a regression-based formulation to predict a single "mode" for occluded and out-of-frustum surfaces, leading to blurriness, implausibility, and failure to capture multiple possible explanations. Thus, they often address this problem partially, focusing either on objects isolated from the background, reconstructing only visible surfaces, or failing to extrapolate far from the input views. In contrast, we propose a generative formulation to learn a distribution of 3D representations of Gaussian splats conditioned on a single input image. To address the lack of ground-truth training data, we propose a Variational AutoReconstructor to learn a latent space only from 2D images in a self-supervised manner, over which a diffusion model is trained. Our method generates faithful reconstructions and diverse samples with the ability to complete the occluded surfaces for high-quality 360-degree renderings.
+
+<img width="1886" height="419" alt="image" src="https://github.com/user-attachments/assets/a50a8770-c2a1-4f8c-913d-82f80c4a0920" />
+
+</details>
+
+[📃 arXiv:2508](https://arxiv.org/pdf/2508.21542) | [⌨️ Code] | [🌐 Project Page](https://nianticspatial.github.io/completesplat/)
 
 
 #### <summary>Scaling Transformer-Based Novel View Synthesis Models with Token Disentanglement and Synthetic Data
