@@ -1034,7 +1034,7 @@ Authors: Yang Liu, Chuanchen Luo, Zhongkai Mao, Junran Peng, Zhaoxiang Zhang
 <summary><b>Abstract</b></summary>
 Recently, 3D Gaussian Splatting (3DGS) has revolutionized radiance field reconstruction, manifesting efficient and high-fidelity novel view synthesis. However, accurately representing surfaces, especially in large and complex scenarios, remains a significant challenge due to the unstructured nature of 3DGS. In this paper, we present CityGaussianV2, a novel approach for large-scale scene reconstruction that addresses critical challenges related to geometric accuracy and efficiency. Building on the favorable generalization capabilities of 2D Gaussian Splatting (2DGS), we address its convergence and scalability issues. Specifically, we implement a decomposed-gradient-based densification and depth regression technique to eliminate blurry artifacts and accelerate convergence. To scale up, we introduce an elongation filter that mitigates Gaussian count explosion caused by 2DGS degeneration. Furthermore, we optimize the CityGaussian pipeline for parallel training, achieving up to 10 compression, at least 25% savings in training time, and a 50% decrease in memory usage. We also established standard geometry benchmarks under large-scale scenes. Experimental results demonstrate that our method strikes a promising balance between visual quality, geometric accuracy, as well as storage and training costs. 
 
-![Uploading image.png…]()
+<img width="1707" height="904" alt="image" src="https://github.com/user-attachments/assets/570fb353-bd02-44ef-a6f0-66ed9d6c1bbc" />
 
 </details>
 
@@ -1071,6 +1071,22 @@ Large transformer-based models have made significant progress in generalizable n
 </details>
 
 [📃 arXiv:2509](https://arxiv.org/pdf/2509.06950) | [⌨️ Code] | [🌐 Project Page](https://scaling3dnvs.github.io/)
+
+#### <summary>DiGS: Accurate and Complete Surface Reconstruction from 3D Gaussians via Direct SDF Learning
+> *This SDF-to-opacity mapping is a differentiable function that effectively locks each Gaussian to the surface*
+
+Authors: Wenzhi Guo, Bing Wang
+<details span>
+<summary><b>Abstract</b></summary>
+3D Gaussian Splatting (3DGS) has recently emerged as a powerful paradigm for photorealistic view synthesis, representing scenes with spatially distributed Gaussian primitives. While highly effective for rendering, achieving accurate and complete surface reconstruction remains challenging due to the unstructured nature of the representation and the absence of explicit geometric supervision. In this work, we propose DiGS, a unified framework that embeds Signed Distance Field (SDF) learning directly into the 3DGS pipeline, thereby enforcing strong and interpretable surface priors. By associating each Gaussian with a learnable SDF value, DiGS explicitly aligns primitives with underlying geometry and improves cross-view consistency. To further ensure dense and coherent coverage, we design a geometry-guided grid growth strategy that adaptively distributes Gaussians along geometry-consistent regions under a multi-scale hierarchy. Extensive experiments on standard benchmarks, including DTU, Mip-NeRF 360, and Tanks& Temples, demonstrate that DiGS consistently improves reconstruction accuracy and completeness while retaining high rendering fidelity.
+
+<img width="1286" height="674" alt="image" src="https://github.com/user-attachments/assets/b5ac1a58-edb4-462b-880d-4ee29f4a0fd1" />
+
+
+</details>
+
+[📃 arXiv:2509](https://arxiv.org/pdf/2509.07493) | [⌨️ Code](https://github.com/DARYL-GWZ/DIGS) | [🌐 Project Page]
+
 
 
 
