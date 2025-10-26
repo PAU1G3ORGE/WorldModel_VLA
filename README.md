@@ -668,6 +668,21 @@ Corner cases are crucial for training and validating autonomous driving systems,
 [📃 arXiv:2508](https://arxiv.org/pdf/2508.20471) | [⌨️ Code] | [🌐 Project Page]
 
 
+#### <summary>VGD: Visual Geometry Gaussian Splatting for Feed-Forward Surround-view Driving Reconstruction
+>*DPT-GS*
+
+Authors: Junhong Lin, Kangli Wang, Shunzhou Wang, Songlin Fan, Ge Li, Wei Gao
+<details span>
+<summary><b>Abstract</b></summary>
+Feed-forward surround-view autonomous driving scene reconstruction offers fast, generalizable inference ability, which faces the core challenge of ensuring generalization while elevating novel view quality. Due to the surround-view with minimal overlap regions, existing methods typically fail to ensure geometric consistency and reconstruction quality for novel views. To tackle this tension, we claim that geometric information must be learned explicitly, and the resulting features should be leveraged to guide the elevating of semantic quality in novel views. In this paper, we introduce \textbf{Visual Gaussian Driving (VGD)}, a novel feed-forward end-to-end learning framework designed to address this challenge. To achieve generalizable geometric estimation, we design a lightweight variant of the VGGT architecture to efficiently distill its geometric priors from the pre-trained VGGT to the geometry branch. Furthermore, we design a Gaussian Head that fuses multi-scale geometry tokens to predict Gaussian parameters for novel view rendering, which shares the same patch backbone as the geometry branch. Finally, we integrate multi-scale features from both geometry and Gaussian head branches to jointly supervise a semantic refinement model, optimizing rendering quality through feature-consistent learning. Experiments on nuScenes demonstrate that our approach significantly outperforms state-of-the-art methods in both objective metrics and subjective quality under various settings, which validates VGD's scalability and high-fidelity surround-view reconstruction.
+
+<img width="2124" height="741" alt="image" src="https://github.com/user-attachments/assets/d3f0efda-8b2e-475e-bffc-708b69d7b945" />
+
+</details>
+
+[📃 arXiv:2510](https://arxiv.org/pdf/2510.19578) | [⌨️ Code](https://github.com/JHLin42in/VGD) | [🌐 Project Page]
+
+
 
 <br>
 <br>
