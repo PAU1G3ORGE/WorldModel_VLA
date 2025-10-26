@@ -683,6 +683,20 @@ Feed-forward surround-view autonomous driving scene reconstruction offers fast, 
 [📃 arXiv:2510](https://arxiv.org/pdf/2510.19578) | [⌨️ Code](https://github.com/JHLin42in/VGD) | [🌐 Project Page]
 
 
+#### <summary>Rethinking Driving World Model as Synthetic Data Generator for Perception Tasks
+>*enhancing the downstream perception tasks*
+
+Authors: Kai Zeng, Zhanqian Wu, Kaixin Xiong, Xiaobao Wei, Xiangyu Guo, Zhenxin Zhu, Kalok Ho, Lijun Zhou, Bohan Zeng, Ming Lu, Haiyang Sun, Bing Wang, Guang Chen, Hangjun Ye, Wentao Zhang
+<details span>
+<summary><b>Abstract</b></summary>
+Recent advancements in driving world models enable controllable generation of high-quality RGB videos or multimodal videos. Existing methods primarily focus on metrics related to generation quality and controllability. However, they often overlook the evaluation of downstream perception tasks, which are  for the performance of autonomous driving. Existing methods usually leverage a training strategy that first pretrains on synthetic data and finetunes on real data, resulting in twice the epochs compared to the baseline (real data only). When we double the epochs in the baseline, the benefit of synthetic data becomes negligible. To thoroughly demonstrate the benefit of synthetic data, we introduce Dream4Drive, a novel synthetic data generation framework designed for enhancing the downstream perception tasks. Dream4Drive first decomposes the input video into several 3D-aware guidance maps and subsequently renders the 3D assets onto these guidance maps. Finally, the driving world model is fine-tuned to produce the edited, multi-view photorealistic videos, which can be used to train the downstream perception models. Dream4Drive enables unprecedented flexibility in generating multi-view corner cases at scale, significantly boosting corner case perception in autonomous driving. To facilitate future research, we also contribute a large-scale 3D asset dataset named DriveObj3D, covering the typical categories in driving scenarios and enabling diverse 3D-aware video editing. We conduct comprehensive experiments to show that Dream4Drive can effectively boost the performance of downstream perception models under various training epochs.
+
+<img width="1586" height="944" alt="image" src="https://github.com/user-attachments/assets/9c059c9b-d7b6-4d3c-ad9f-9ca3a69a3aaf" />
+
+</details>
+
+[📃 arXiv:2510](https://arxiv.org/pdf/2510.19195) | [⌨️ Code](https://github.com/wm-research/Dream4Drive) | [🌐 Project Page](https://wm-research.github.io/Dream4Drive/)
+
 
 <br>
 <br>
