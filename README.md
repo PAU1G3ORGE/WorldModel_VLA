@@ -1156,6 +1156,19 @@ Authors: Wenzhi Guo, Bing Wang
 
 [📃 arXiv:2509](https://arxiv.org/pdf/2509.07493) | [⌨️ Code](https://github.com/DARYL-GWZ/DIGS) | [🌐 Project Page]
 
+#### <summary>Positional Encoding Field
+> *When positional encodings are reshuffled or perturbed, the model still produces globally coherent output, though with patches reorganized according to the altered PEs.*
+
+Authors: Yunpeng Bai, Haoxiang Li, Qixing Huang
+<details span>
+<summary><b>Abstract</b></summary>
+Diffusion Transformers (DiTs) have emerged as the dominant architecture for visual generation, powering state-of-the-art image and video models. By representing images as patch tokens with positional encodings (PEs), DiTs combine Transformer scalability with spatial and temporal inductive biases. In this work, we revisit how DiTs organize visual content and discover that patch tokens exhibit a surprising degree of independence: even when PEs are perturbed, DiTs still produce globally coherent outputs, indicating that spatial coherence is primarily governed by PEs. Motivated by this finding, we introduce the Positional Encoding Field (PE-Field), which extends positional encodings from the 2D plane to a structured 3D field. PE-Field incorporates depth-aware encodings for volumetric reasoning and hierarchical encodings for fine-grained sub-patch control, enabling DiTs to model geometry directly in 3D space. Our PE-Field-augmented DiT achieves state-of-the-art performance on single-image novel view synthesis and generalizes to controllable spatial image editing.
+
+<img width="1901" height="809" alt="image" src="https://github.com/user-attachments/assets/402e3013-4a8a-4dd7-b55b-d7e040ecae2a" />
+
+</details>
+
+[📃 arXiv:2510](https://arxiv.org/pdf/2510.20385) | [⌨️ Code](https://github.com/MTLab/PE-Field) | [🌐 Project Page](https://yunpeng1998.github.io/PE-Field-HomePage/)
 
 
 
