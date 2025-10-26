@@ -204,7 +204,19 @@ This article presents UrbanTwin datasets - high-fidelity, realistic replicas of 
 
 [📃 arXiv:2509](https://arxiv.org/pdf/2509.06781) | [⌨️ Code] | [🌐 Project Page]
 
+#### <summary>AutoScape: Geometry-Consistent Long-Horizon Scene Generation
+>*geometry-aware conditioning and guidance*
 
+Authors: Jiacheng Chen, Ziyu Jiang, Mingfu Liang, Bingbing Zhuang, Jong-Chyi Su, Sparsh Garg, Ying Wu, Manmohan Chandraker
+<details span>
+<summary><b>Abstract</b></summary>
+This paper proposes AutoScape, a long-horizon driving scene generation framework. At its core is a novel RGB-D diffusion model that iteratively generates sparse, geometrically consistent keyframes, serving as reliable anchors for the scene's appearance and geometry. To maintain long-range geometric consistency, the model 1) jointly handles image and depth in a shared latent space, 2) explicitly conditions on the existing scene geometry (i.e., rendered point clouds) from previously generated keyframes, and 3) steers the sampling process with a warp-consistent guidance. Given high-quality RGB-D keyframes, a video diffusion model then interpolates between them to produce dense and coherent video frames. AutoScape generates realistic and geometrically consistent driving videos of over 20 seconds, improving the long-horizon FID and FVD scores over the prior state-of-the-art by 48.6\% and 43.0\%, respectively.
+
+<img width="2060" height="866" alt="image" src="https://github.com/user-attachments/assets/aa2a3130-c307-4b37-aefe-c5b42c4f6e72" />
+
+</details>
+
+[📃 arXiv:2510](https://arxiv.org/pdf/2510.20726) | [⌨️ Code] | [🌐 Project Page](https://auto-scape.github.io/)
 
 
 <br>
