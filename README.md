@@ -1170,5 +1170,17 @@ Diffusion Transformers (DiTs) have emerged as the dominant architecture for visu
 
 [📃 arXiv:2510](https://arxiv.org/pdf/2510.20385) | [⌨️ Code](https://github.com/MTLab/PE-Field) | [🌐 Project Page](https://yunpeng1998.github.io/PE-Field-HomePage/)
 
+#### <summary>Epipolar Geometry Improves Video Generation Models
+> *leverage the Sampson epipolar error to identify 3D consistent vs. inconsistent samples*
 
+Authors: Orest Kupyn, Fabian Manhardt, Federico Tombari, Christian Rupprecht
+<details span>
+<summary><b>Abstract</b></summary>
+Video generation models have progressed tremendously through large latent diffusion transformers trained with rectified flow techniques. Yet these models still struggle with geometric inconsistencies, unstable motion, and visual artifacts that break the illusion of realistic 3D scenes. 3D-consistent video generation could significantly impact numerous downstream applications in generation and reconstruction tasks. We explore how epipolar geometry constraints improve modern video diffusion models. Despite massive training data, these models fail to capture fundamental geometric principles underlying visual content. We align diffusion models using pairwise epipolar geometry constraints via preference-based optimization, directly addressing unstable camera trajectories and geometric artifacts through mathematically principled geometric enforcement. Our approach efficiently enforces geometric principles without requiring end-to-end differentiability. Evaluation demonstrates that classical geometric constraints provide more stable optimization signals than modern learned metrics, which produce noisy targets that compromise alignment quality. Training on static scenes with dynamic cameras ensures high-quality measurements while the model generalizes effectively to diverse dynamic content. By bridging data-driven deep learning with classical geometric computer vision, we present a practical method for generating spatially consistent videos without compromising visual quality.
+
+<img width="1503" height="458" alt="image" src="https://github.com/user-attachments/assets/30d9fc1d-b8f5-4614-aabe-f9a3d334cae0" />
+
+</details>
+
+[📃 arXiv:2510](https://arxiv.org/pdf/2510.21615) | [⌨️ Code] | [🌐 Project Page](https://epipolar-dpo.github.io/)
 
