@@ -1184,3 +1184,32 @@ Video generation models have progressed tremendously through large latent diffus
 
 [📃 arXiv:2510](https://arxiv.org/pdf/2510.21615) | [⌨️ Code] | [🌐 Project Page](https://epipolar-dpo.github.io/)
 
+
+#### <summary>Endless World: Real-Time 3D-Aware Long Video Generation
+> *project-latent-like KV cache*
+
+Authors: Ke Zhang, Yiqun Mei, Jiacong Xu, Vishal M. Patel
+<details span>
+<summary><b>Abstract</b></summary>
+Producing long, coherent video sequences with stable 3D structure remains a major challenge, particularly in streaming scenarios. Motivated by this, we introduce Endless World, a real-time framework for infinite, 3D-consistent video this http URL support infinite video generation, we introduce a conditional autoregressive training strategy that aligns newly generated content with existing video frames. This design preserves long-range dependencies while remaining computationally efficient, enabling real-time inference on a single GPU without additional training this http URL, our Endless World integrates global 3D-aware attention to provide continuous geometric guidance across time. Our 3D injection mechanism enforces physical plausibility and geometric consistency throughout extended sequences, addressing key challenges in long-horizon and dynamic scene this http URL experiments demonstrate that Endless World produces long, stable, and visually coherent videos, achieving competitive or superior performance to existing methods in both visual fidelity and spatial consistency. Our project has been available on this https URL.
+
+<img width="1099" height="381" alt="image" src="https://github.com/user-attachments/assets/73528757-bb1d-4aba-87b8-2c86ff89eeff" />
+
+</details>
+
+[📃 arXiv:2512](https://arxiv.org/pdf/2512.12430) | [⌨️ Code] | [🌐 Project Page](https://bwgzk-keke.github.io/EndlessWorld/)
+
+
+#### <summary>WorldWarp: Propagating 3D Geometry with Asynchronous Video Diffusion
+> *project latent*
+
+Authors: Hanyang Kong, Xingyi Yang, Xiaoxu Zheng, Xinchao Wang
+<details span>
+<summary><b>Abstract</b></summary>
+Generating long-range, geometrically consistent video presents a fundamental dilemma: while consistency demands strict adherence to 3D geometry in pixel space, state-of-the-art generative models operate most effectively in a camera-conditioned latent space. This disconnect causes current methods to struggle with occluded areas and complex camera trajectories. To bridge this gap, we propose WorldWarp, a framework that couples a 3D structural anchor with a 2D generative refiner. To establish geometric grounding, WorldWarp maintains an online 3D geometric cache built via Gaussian Splatting (3DGS). By explicitly warping historical content into novel views, this cache acts as a structural scaffold, ensuring each new frame respects prior geometry. However, static warping inevitably leaves holes and artifacts due to occlusions. We address this using a Spatio-Temporal Diffusion (ST-Diff) model designed for a "fill-and-revise" objective. Our key innovation is a spatio-temporal varying noise schedule: blank regions receive full noise to trigger generation, while warped regions receive partial noise to enable refinement. By dynamically updating the 3D cache at every step, WorldWarp maintains consistency across video chunks. Consequently, it achieves state-of-the-art fidelity by ensuring that 3D logic guides structure while diffusion logic perfects texture.
+
+<img width="1750" height="535" alt="image" src="https://github.com/user-attachments/assets/fbd347b3-f04a-4193-a89a-b471e6ce2f74" />
+
+</details>
+
+[📃 arXiv:2512](https://arxiv.org/pdf/2512.19678) | [⌨️ Code](https://github.com/HyoKong/WorldWarp) | [🌐 Project Page](https://hyokong.github.io/worldwarp-page/)
