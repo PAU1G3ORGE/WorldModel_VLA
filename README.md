@@ -1213,3 +1213,18 @@ Generating long-range, geometrically consistent video presents a fundamental dil
 </details>
 
 [📃 arXiv:2512](https://arxiv.org/pdf/2512.19678) | [⌨️ Code](https://github.com/HyoKong/WorldWarp) | [🌐 Project Page](https://hyokong.github.io/worldwarp-page/)
+
+
+#### <summary>HiStream: Efficient High-Resolution Video Generation via Redundancy-Eliminated Streaming
+> *Asymmetric Denoising: All subsequent chunks (Chunk 2 ...CN/M) are processed using an accelerated 2-step path.*
+
+Authors: Haonan Qiu, Shikun Liu, Zijian Zhou, Zhaochong An, Weiming Ren, Zhiheng Liu, Jonas Schult, Sen He, Shoufa Chen, Yuren Cong, Tao Xiang, Ziwei Liu, Juan-Manuel Perez-Rua
+<details span>
+<summary><b>Abstract</b></summary>
+High-resolution video generation, while crucial for digital media and film, is computationally bottlenecked by the quadratic complexity of diffusion models, making practical inference infeasible. To address this, we introduce HiStream, an efficient autoregressive framework that systematically reduces redundancy across three axes: i) Spatial Compression: denoising at low resolution before refining at high resolution with cached features; ii) Temporal Compression: a chunk-by-chunk strategy with a fixed-size anchor cache, ensuring stable inference speed; and iii) Timestep Compression: applying fewer denoising steps to subsequent, cache-conditioned chunks. On 1080p benchmarks, our primary HiStream model (i+ii) achieves state-of-the-art visual quality while demonstrating up to 76.2x faster denoising compared to the Wan2.1 baseline and negligible quality loss. Our faster variant, HiStream+, applies all three optimizations (i+ii+iii), achieving a 107.5x acceleration over the baseline, offering a compelling trade-off between speed and quality, thereby making high-resolution video generation both practical and scalable.
+
+<img width="1966" height="425" alt="image" src="https://github.com/user-attachments/assets/df28da51-7555-45a8-96a8-235184d8b9b4" />
+
+</details>
+
+[📃 arXiv:2512](https://arxiv.org/pdf/2512.21338) | [⌨️ Code](https://github.com/arthur-qiu/HiStream) | [🌐 Project Page](http://haonanqiu.com/projects/HiStream.html)
