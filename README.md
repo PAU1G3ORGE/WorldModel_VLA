@@ -1228,3 +1228,19 @@ High-resolution video generation, while crucial for digital media and film, is c
 </details>
 
 [📃 arXiv:2512](https://arxiv.org/pdf/2512.21338) | [⌨️ Code](https://github.com/arthur-qiu/HiStream) | [🌐 Project Page](http://haonanqiu.com/projects/HiStream.html)
+
+
+#### <summary>UMAMI: Unifying Masked Autoregressive Models and Deterministic Rendering for View Synthesis
+> *diffusion for occluded or unseen regions, feed-forward for ture geometry*
+
+Authors: Thanh-Tung Le, Tuan Pham, Tung Nguyen, Deying Kong, Xiaohui Xie, Stephan Mandt
+<details span>
+<summary><b>Abstract</b></summary>
+Novel view synthesis (NVS) seeks to render photorealistic, 3D-consistent images of a scene from unseen camera poses given only a sparse set of posed views. Existing deterministic networks render observed regions quickly but blur unobserved areas, whereas stochastic diffusion-based methods hallucinate plausible content yet incur heavy training- and inference-time costs. In this paper, we propose a hybrid framework that unifies the strengths of both paradigms. A bidirectional transformer encodes multi-view image tokens and Plucker-ray embeddings, producing a shared latent representation. Two lightweight heads then act on this representation: (i) a feed-forward regression head that renders pixels where geometry is well constrained, and (ii) a masked autoregressive diffusion head that completes occluded or unseen regions. The entire model is trained end-to-end with joint photometric and diffusion losses, without handcrafted 3D inductive biases, enabling scalability across diverse scenes. Experiments demonstrate that our method attains state-of-the-art image quality while reducing rendering time by an order of magnitude compared with fully generative baselines.
+
+<img width="1289" height="531" alt="image" src="https://github.com/user-attachments/assets/b1af07dd-042e-41b9-8807-fbd290b59654" />
+
+</details>
+
+[📃 arXiv:2512](https://arxiv.org/pdf/2512.20107v1) | [⌨️ Code] | [🌐 Project Page]
+
